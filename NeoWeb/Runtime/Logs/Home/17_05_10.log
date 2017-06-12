@@ -1,0 +1,668 @@
+[ 2017-05-10T05:52:09-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001190s ]
+
+[ 2017-05-10T07:23:03-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000479s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000720s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-05-10T07:24:39-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent C:\wamp64\www\neo1\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] Cannot modify header information - headers already sent C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [2] Cannot modify header information - headers already sent C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 284 行.
+
+[ 2017-05-10T07:24:39-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-05-10T07:24:56-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-05-10T07:25:14-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+
+[ 2017-05-10T07:25:14-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-05-10T07:26:21-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+
+[ 2017-05-10T07:26:21-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-05-10T19:31:08-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-05-10T19:32:14-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+
+[ 2017-05-10T19:32:14-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-05-10T19:34:50-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-05-10T19:35:03-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+
+[ 2017-05-10T19:35:03-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-05-10T19:36:00-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+
+[ 2017-05-10T19:36:00-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-05-10T19:44:31-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-05-10T19:44:44-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 58 行.
+
+[ 2017-05-10T19:44:44-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-05-10T19:46:48-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+
+[ 2017-05-10T19:47:00-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 40 行.
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+
+[ 2017-05-10T19:47:00-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-05-10T19:52:08-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-05-10T19:52:10-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-05-10T19:52:21-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 49 行.
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 40 行.
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+
+[ 2017-05-10T19:52:21-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-05-10T20:05:44-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-05-10T20:06:06-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 49 行.
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 40 行.
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+
+[ 2017-05-10T20:06:06-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000512s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-05-10T20:06:55-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-05-10T20:16:36-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 49 行.
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 40 行.
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+
+[ 2017-05-10T20:16:36-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+
+[ 2017-05-10T20:16:39-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-05-10T20:19:11-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+
+[ 2017-05-10T20:19:23-05:00 ] ::1 /neo1/index.php/home/index/getmoreserviceinfoproc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 49 行.
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 40 行.
+NOTIC: [8] Undefined property: stdClass::$more_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_email C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_phone C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$more_company_name C:\wamp64\www\neo1\NeoWeb\Home\Logic\NeoGeneralProcessLogic.class.php 第 60 行.
+
+[ 2017-05-10T20:19:23-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 33 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+

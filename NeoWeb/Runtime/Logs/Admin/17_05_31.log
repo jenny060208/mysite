@@ -1,0 +1,768 @@
+[ 2017-05-31T06:52:27-05:00 ] ::1 /neo1/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Admin\Controller\IndexController.class.php on line 12 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000706s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+
+[ 2017-05-31T06:52:44-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_signin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-05-31T06:52:46-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-05-31T06:53:43-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-05-31T06:54:28-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-05-31T06:54:58-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-05-31T06:58:32-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2017-05-31T06:59:10-05:00 ] ::1 /neo1/index.php/admin/admin/create_all_tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-05-31T07:00:51-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-05-31T07:00:53-05:00 ] ::1 /neo1/index.php/admin/admin/create_all_tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-05-31T07:01:54-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Admin\Controller\AdminController.class.php on line 44 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+ERR: 模板不存在:./NeoWeb/Admin/View/Admin/admin_account_create.html
+
+[ 2017-05-31T07:08:46-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Admin\Controller\AdminController.class.php on line 44 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+ERR: 模板不存在:./NeoWeb/Admin/View/Admin/admin_account_create.html
+
+[ 2017-05-31T07:12:54-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-05-31T07:13:37-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-05-31T07:15:13-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2017-05-31T07:15:39-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-05-31T07:19:48-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] Undefined variable: accountSet C:\wamp64\www\neo1\NeoWeb\Admin\Logic\AdminAcntCreateLogic.class.php 第 257 行.
+NOTIC: [8] Undefined variable: bnInfo C:\wamp64\www\neo1\NeoWeb\Admin\Model\AccountModel.class.php 第 164 行.
+
+[ 2017-05-31T07:20:14-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Undefined variable: accountSet C:\wamp64\www\neo1\NeoWeb\Admin\Logic\AdminAcntCreateLogic.class.php 第 257 行.
+NOTIC: [8] Undefined variable: bnInfo C:\wamp64\www\neo1\NeoWeb\Admin\Model\AccountModel.class.php 第 164 行.
+
+[ 2017-05-31T07:22:41-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-05-31T07:23:19-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-05-31T07:23:42-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: [8] Undefined variable: accountSet C:\wamp64\www\neo1\NeoWeb\Admin\Logic\AdminAcntCreateLogic.class.php 第 257 行.
+
+[ 2017-05-31T07:25:52-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-05-31T07:26:14-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-05-31T07:30:30-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2017-05-31T07:30:52-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-05-31T09:38:31-05:00 ] ::1 /neo1/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Admin\Controller\IndexController.class.php on line 12 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-05-31T09:38:51-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_signin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-05-31T09:38:52-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-05-31T09:39:17-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-05-31T09:48:55-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2017-05-31T09:49:17-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+
+[ 2017-05-31T09:50:20-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-05-31T09:50:40-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-05-31T09:51:56-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2017-05-31T09:52:16-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+
+[ 2017-05-31T09:53:50-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-05-31T09:54:13-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-05-31T10:03:44-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-05-31T10:04:44-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-05-31T10:04:49-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-05-31T10:07:09-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2017-05-31T10:07:29-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-05-31T10:09:19-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-05-31T10:09:37-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+
+[ 2017-05-31T10:27:41-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-05-31T10:27:43-05:00 ] ::1 /neo1/index.php/admin/admin/create_all_tables.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-05-31T10:28:27-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-05-31T10:29:04-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-05-31T10:29:16-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-05-31T10:31:16-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-05-31T10:31:31-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-05-31T10:32:49-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2017-05-31T10:33:16-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-05-31T10:35:06-05:00 ] ::1 /neo1/index.php/admin/admin/admin_main_panel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2017-05-31T10:35:36-05:00 ] ::1 /neo1/index.php/admin/admin/admin_account_create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Admin\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+

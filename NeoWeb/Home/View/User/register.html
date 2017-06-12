@@ -1,0 +1,133 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+<TITLE>Neo Reward System</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap CSS definition-->
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+
+<!-- main page style CSS definition -->
+<link rel="stylesheet" href="__CSS__/mainpage.css" type="text/css">
+<!-- Script files definition -->
+<script type="text/javascript" src="__JS__/form_utilities.js"></script>
+
+<script type="text/javascript">
+      jQuery(function($)
+      {
+        var objRegBut = document.getElementById("reg_submit");
+        $(objRegBut).click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["form"] = document.getElementById("form_register");
+          objArray["name"] = document.getElementById("user_name");
+          objArray["email"]  = document.getElementById("user_email");
+          objArray["mobile"]  = document.getElementById("user_mobile");
+          objArray["pw"]   = document.getElementById("user_password");
+          objArray["action"]   = "{:U('User/registerProc')}";
+                
+          userRegistFormProcess(objArray);
+        });
+      });
+    </script>
+
+
+</head>
+
+<body id="userRegPage" data-spy="scroll" data-target=".navbar"
+	data-offset="60">
+
+	<!--Top part define-->
+	<include file="Public:user_navi_sign_out" />
+
+	<!-- Content container part define-->
+
+	<!-- Container (Contact info Section) -->
+	<div class="container-fluid" style="margin-top: 100px;">
+		<div class="row text-center">
+			<div class="col-sm-offset-4 col-sm-4">
+				<div class="panel panel-default text-center"
+					style="border: 2px solid #c3c3c3; box-shadow: 5px 5px 5px grey;">
+					<div class="panel-body">
+						<a href="http://www.facebook.com"> <img border="0"
+							src="__IMG__/btn_signinfb.png" alt="Facebook Register"
+							width="350" height="40">
+						</a>
+						<hr
+							style="border-color: -moz-use-text-color #FFFFFF; border-style: solid none; border-width: 3px 0;" />
+
+						<form class="form-horizontal" id="form_register"
+							name="form_register" method="post" action="__SELF__">
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="user_name">Name:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="user_name"
+										id="user_name" placeholder="Enter name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="user_email">Email:</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" name="user_email"
+										id="user_email" placeholder="Enter email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="user_mobile">Mobile:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="user_mobile"
+										id="user_mobile" placeholder="Enter mobile number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="user_password">Password:</label>
+								<div class="col-sm-10">
+									<input type="password" class="form-control"
+										name="user_password" id="user_password"
+										placeholder="Enter password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div>
+									<button type="button" id="reg_submit"
+										class="submit_button_style">Register with Email</button>
+								</div>
+							</div>
+						</form>
+
+						<p style="font-size: 20px">
+							By clicking Register, you confirm that you accept the <a
+								href="http://www.google.com" class="general_text_link_3_style">Terms
+								of Service.</a> <br>
+						</p>
+						<p style="font-size: 20px">
+							<a href="{:U('User/signIn')}" class="general_text_link_3_style">Already
+								registered? Login →</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- Foot part define-->
+	<include file="Public:user_footer" />
+
+
+</body>
+</html>

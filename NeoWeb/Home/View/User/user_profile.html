@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<TITLE>Neo Reward System</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap CSS definition-->
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+
+<!-- main page style CSS definition -->
+<link rel="stylesheet" href="__CSS__/mainpage.css" type="text/css">
+<!-- Script files definition -->
+<script type="text/javascript" src="__JS__/form_utilities.js"></script>
+
+
+<style>
+#total {
+	width: 140px;
+	height: 140px;
+	background-color: #EC6C00;
+	margin: auto;
+}
+
+#total .money-txt {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	padding-top: 40px;
+}
+
+.img-rounded {
+	border-radius: 10px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+}
+
+#basicInfoModal {
+	margin: 100px 0 0 0px;
+	/* PLAY THE WITH THE VALUES TO SEE GET THE DESIRED EFFECT */
+}
+
+#pwUpdateModal {
+	margin: 100px 0 0 0px;
+	/* PLAY THE WITH THE VALUES TO SEE GET THE DESIRED EFFECT */
+}
+
+#notificationModal {
+	margin: 100px 0 0 0px;
+	/* PLAY THE WITH THE VALUES TO SEE GET THE DESIRED EFFECT */
+}
+
+#fbSetting {
+	margin: 100px 0 0 0px;
+	/* PLAY THE WITH THE VALUES TO SEE GET THE DESIRED EFFECT */
+}
+</style>
+
+<script type="text/javascript">
+      jQuery(function($)
+      {
+        //Load Basic info update modal
+        $("#button_basic_info_modal").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["name"] = document.getElementById('bi_user_name');
+          objArray["email"] = document.getElementById('bi_user_email');;
+          objArray["mobile"] = document.getElementById('bi_user_mobile');
+          objArray["address1"] = document.getElementById('bi_user_address_1');
+          objArray["address2"] = document.getElementById('bi_user_address_2');
+          objArray["city"] = document.getElementById('bi_user_city');
+          objArray["province"] = document.getElementById('bi_user_province');
+          objArray["country"] = document.getElementById('bi_user_country');
+          objArray["postalCode"] = document.getElementById('bi_user_postal_code');
+          objArray["birthday"] = document.getElementById('bi_user_birth_day');
+          objArray["birthMonth"] = document.getElementById('bi_user_birth_month');
+          objArray["action"] = "{:U('User/basic_info')}";
+          
+          loadUserBasicInfo(objArray);
+        });
+        
+        // Process the basic info update
+        $("#bi_info_update_button").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["form"] = document.getElementById('form_basic_info');
+          objArray["name"] = document.getElementById('bi_user_name');
+          objArray["email"] = document.getElementById('bi_user_email');;
+          objArray["mobile"] = document.getElementById('bi_user_mobile');
+          objArray["address1"] = document.getElementById('bi_user_address_1');
+          objArray["address2"] = document.getElementById('bi_user_address_2');
+          objArray["city"] = document.getElementById('bi_user_city');
+          objArray["province"] = document.getElementById('bi_user_province');
+          objArray["country"] = document.getElementById('bi_user_country');
+          objArray["postalCode"] = document.getElementById('bi_user_postal_code');
+          objArray["birthday"] = document.getElementById('bi_user_birth_day');
+          objArray["birthMonth"] = document.getElementById('bi_user_birth_month');
+          objArray["action"] = "{:U('User/basic_info_update')}";
+        
+          userBasicInfoUpdate(objArray);
+        });
+        
+        //Load User password update modal
+        $("#button_pw_modal").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["oldPw"]    = document.getElementById('pu_old_password');
+          objArray["newPw"]    = document.getElementById('pu_new_password');
+          objArray["newPwCfm"] = document.getElementById('pu_cfm_new_password');
+        
+          presetAccountPwData(objArray);
+        });
+
+        // Process the Password update
+        $("#pu_password_update_button").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["form"]    = document.getElementById('form_pw_update');
+          objArray["oldPw"]    = document.getElementById('pu_old_password');
+          objArray["newPw"]    = document.getElementById('pu_new_password');
+          objArray["newPwCfm"] = document.getElementById('pu_cfm_new_password');
+          objArray["action"] = "{:U('User/password_update')}";
+         
+          accountPwUpdate(objArray);
+        });
+        
+        //////////////////////////////////////////////////
+        //Load User notice method update modal
+        $("#button_notification_modal").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["chkStoreSms"]   = document.getElementById("storeSmsCheckbox");
+          objArray["chkStoreEmail"] = document.getElementById("storeEmailCheckbox");
+          objArray["chkNeoSms"]     = document.getElementById("neoSmsCheckbox");
+          objArray["chkNeoEmail"]   =  document.getElementById("neoEmailCheckbox");
+          objArray["action"] = "{:U('User/get_notice_pref_info')}";
+
+          loadUserPrefNotice(objArray);
+        });
+        
+        
+        //////////////////////////////////////////////////
+        // Process the notification preference update
+        $("#pref_update_button").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["form"]   = document.getElementById("form_pref_update");
+          objArray["action"] = "{:U('User/notification_pref_update')}";
+
+          userPrefNoticeUpdate(objArray);
+        });
+      });
+    </script>
+
+</head>
+
+
+<body id="userMainPage" data-spy="scroll" data-target=".navbar"
+	data-offset="60">
+	<!--Top Navigation part define-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="{:U('Index/index')}"> <img
+					src="__IMG__/ic_title_1.png" alt="Company Logo" width="200"
+					height="50"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://www.google.com">Find Locations</a></li>
+					<li><a href="{:U('Business/business_main')}">For
+							Businesses</a></li>
+					<li class="btn-group">
+						<button role="button" class="navi-btn-default dropdown-toggle"
+							data-toggle="dropdown">
+							{$userInfo['user_name']} <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li class="navi-drop-down-btn"><a href="#">Edit Profile</a></li>
+							<li class="navi-drop-down-btn"><a
+								href="{:U('User/signOutProc')}">Sign out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content container part define-->
+
+	<!-- Container (Contact info Section) -->
+	<div class="container-fluid" style="margin-top: 100px;">
+		<div class="row text-center">
+			<div class="col-sm-offset-4 col-sm-4">
+				<div class="panel panel-default text-center"
+					style="border: 2px solid #c3c3c3; box-shadow: 5px 5px 5px grey;">
+					<div class="panel-heading">
+						<p class="text-center" style="font-size: 30px;">{$userInfo['user_name']}
+							Profile Update</p>
+					</div>
+					<div class="panel-body">
+						<p>
+							<button type="button" id="button_basic_info_modal"
+								class="btn btn-primary btn-lg btn-block" data-toggle="modal"
+								data-target="#basicInfoModal">Basic Info</button>
+						</p>
+						<p>
+							<button type="button" id="button_pw_modal"
+								class="btn btn-primary btn-lg btn-block" data-toggle="modal"
+								data-target="#pwUpdateModal">Password Update</button>
+						</p>
+						<p>
+							<button type="button" id="button_notification_modal"
+								class="btn btn-primary btn-lg btn-block" data-toggle="modal"
+								data-target="#notificationModal">Notification
+								Preference</button>
+						</p>
+						<p>
+							<button type="button" id="button_fb_setting_modal"
+								class="btn btn-primary btn-lg btn-block" data-toggle="modal"
+								data-target="#fbSetting">Facebook Setting</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<!-- Foot part define-->
+	<include file="Public:user_footer" />
+
+	<!-- Basic info Modal part define-->
+	<div class="modal fade" id="basicInfoModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title">Basic Info</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" id="form_basic_info"
+						name="form_basic_info" method="post" action="__SELF__">
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_name">Name:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="bi_user_name"
+									id="bi_user_name" placeholder="Enter name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_email">Email:</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" name="bi_user_email"
+									id="bi_user_email" placeholder="Enter email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_mobile">Mobile:</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" name="bi_user_mobile"
+									id="bi_user_mobile" placeholder="Enter mobile number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_address_1">Address
+								1:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="bi_user_address_1"
+									id="bi_user_address_1" placeholder="Enter address 1">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_address_2">Address
+								2:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="bi_user_address_2"
+									id="bi_user_address_2" placeholder="Enter address 2">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_city">City:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="bi_user_city"
+									id="bi_user_city" placeholder="Enter city">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_proince">Province/State:</label>
+							<div class="col-sm-9">
+								<select class="form-control" name="bi_user_province"
+									id="bi_user_province">
+									<option>ON -- Ontario</option>
+									<option>QC -- Quebec</option>
+									<option>BC -- British Columbia</option>
+									<option>AB -- Alberta</option>
+									<option>MB -- Manitoba</option>
+									<option>SK -- Saskatchewan</option>
+									<option>NB -- New Brunswick</option>
+									<option>NL -- Newfoundland and Labrador</option>
+									<option>NS -- Nova Scotia</option>
+									<option>PE -- Prince Edward Island</option>
+									<option>NT -- Northwest Territories</option>
+									<option>NU -- Nunavut</option>
+									<option>YT -- Yukon</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_country">Country:</label>
+							<div class="col-sm-9">
+								<select class="form-control" name="bi_user_country"
+									id="bi_user_country">
+									<option>CANADA</option>
+									<option>UNITED STATES</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_postal_code">Postal
+								Code:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control"
+									name="bi_user_postal_code" id="bi_user_postal_code"
+									placeholder="Enter Postal Code">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_birth_month">Month
+								of Birth:</label>
+							<div class="col-sm-9">
+								<select class="form-control" name="bi_user_birth_month"
+									id="bi_user_birth_month">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="bi_user_birth_day">Date
+								of Birth:</label>
+							<div class="col-sm-9">
+								<select class="form-control" name="bi_user_birth_day"
+									id="bi_user_birth_day">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+									<option>26</option>
+									<option>27</option>
+									<option>28</option>
+									<option>29</option>
+									<option>30</option>
+									<option>31</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary"
+						id="bi_info_update_button">Update</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+
+	<!-- Password update Modal part define-->
+	<div class="modal fade" id="pwUpdateModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title">Password Update</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" id="form_pw_update"
+						name="form_pw_update" method="post" action="__SELF__">
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="pu_old_password">Old
+								Password:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="pu_old_password"
+									id="pu_old_password" placeholder="Enter old password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="pu_new_password">New
+								Password:</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" name="pu_new_password"
+									id="pu_new_password" placeholder="Enter new password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="pu_cfm_new_password">Confirm
+								New Password:</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control"
+									name="pu_cfm_new_password" id="pu_cfm_new_password"
+									placeholder="Re-enter new email">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary"
+						id="pu_password_update_button">Update</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+
+	<!-- Notification preference Modal part define-->
+	<div class="modal fade" id="notificationModal" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title">Notification Preferences</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" id="form_pref_update"
+						name="form_pref_update" method="post" action="__SELF__">
+						<p style="font-size: 18px;">Notify me about Store Promotion
+							Information:</p>
+						<label class="checkbox-inline" style="margin-left: 250px">
+							<input type="checkbox" value="true" name="storeSmsCheckbox"
+							id="storeSmsCheckbox">SMS Text
+						</label> <label class="checkbox-inline"> <input type="checkbox"
+							value="true" name="storeEmailCheckbox" id="storeEmailCheckbox">Email
+						</label>
+						<hr>
+						<br>
+						<p style="font-size: 18px;">Notify me about Neo (occasional):</p>
+						<label class="checkbox-inline" style="margin-left: 250px">
+							<input type="checkbox" value="true" name="neoSmsCheckbox"
+							id="neoSmsCheckbox">SMS Text
+						</label> <label class="checkbox-inline"> <input type="checkbox"
+							value="true" name="neoEmailCheckbox" id="neoEmailCheckbox">Email
+						</label> <br>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close
+					</button>
+					<button type="button" class="btn btn-primary"
+						id="pref_update_button">Update</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+
+	<!-- Facebook setting Modal part define-->
+	<div class="modal fade" id="fbSetting" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+
+					<h4 class="modal-title">Facebook Setting</h4>
+				</div>
+				<div class="modal-body">Working in progress...</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close
+					</button>
+					<button type="button" class="btn btn-primary"
+						id="fb_setting_update_button">Update</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+
+
+
+
+
+</body>
+</html>

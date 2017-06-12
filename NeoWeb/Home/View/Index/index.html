@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<TITLE>Neo Reward System</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap CSS definition-->
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+
+
+
+
+<!-- main page style CSS definition -->
+<link rel="stylesheet" href="__CSS__/mainpage.css" type="text/css">
+<!-- Script files definition -->
+<script type="text/javascript" src="__JS__/form_utilities.js"></script>
+<script src="https://use.fontawesome.com/12eb9f213d.js"></script>
+
+<script type="text/javascript">
+      jQuery(function($)
+      {
+        <!-- Process the get in touch form -->
+        $("#button_general_enquiry_msg_form").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["form"] = document.getElementById('general_enquiry_msg_form');
+          objArray["name"] = document.getElementById('general_enquiry_name');
+          objArray["email"] = document.getElementById('general_enquiry_email');
+          objArray["msg"] = document.getElementById('general_enquiry_fm_message');
+          objArray["action"] = "{:U('Index/getInTouchProc')}";
+          generalEnquiryFormProcess(objArray);
+        });
+        
+        <!-- Process the get more info form -->
+        $("#button_get_more_info").click(function ()
+        {
+          var objArray = [];　 // Create a new array
+          objArray["form"] = document.getElementById('get_more_info_form');
+          objArray["name"] = document.getElementById('more_name');
+          objArray["email"] = document.getElementById('more_email');
+          objArray["phone"] = document.getElementById('more_phone');
+          objArray["company_name"] = document.getElementById('more_company_name');
+          objArray["action"] = "{:U('Index/getMoreServiceInfoProc')}";
+          getMoreInfoFormProcess(objArray);
+          
+          
+      
+          
+          
+          
+        });
+        
+      });
+    </script>
+
+
+
+
+<style>
+.fa-vc {
+	line-height: inherit !important;
+}
+</style>
+
+
+</head>
+
+<body id="mainPage" data-spy="scroll" data-target=".navbar"
+	data-offset="60">
+
+	<!--Top part define-->
+	<include file="Public:main_header_sign_out" />
+
+	<!-- user part -->
+	<div id="home" class="container-fluid text-center"
+		style="background-color: #ca856a; color: #fff; font-family: Montserrat, sans-serif; padding: 100px 25px;">
+		<br>
+		<br> <br>
+		<br>
+		<p
+			style="color: #fff; font-family: sans-serif; font-size: 55px !important;">
+			Know Your Customer to Make Marketing Easy</p>
+
+		<p
+			style="color: #cccccc; font-family: sans-serif; font-size: 35px !important;">Get
+			your customers engage and retain.</p>
+		<br> <a href="#more_info" class="get_info_button_style">GET
+			MORE INFORMATION</a> <br>
+		<br>
+		<br>
+		<p
+			style="color: #dddddd; font-family: sans-serif; font-size: 25px !important; font-weight: bold;">Give
+			your customers more personalized experiences - both in and out of
+			store</p>
+		<p
+			style="color: #dddddd; font-family: sans-serif; font-size: 25px !important; font-weight: bold;">
+			- and increase your revenue from returning customers.</p>
+	</div>
+
+	<!-- Service part -->
+	<div id="services" class="container-fluid text-center"
+		style="background-color: #eeeeee; color: #222222; font-family: Montserrat, sans-serif; padding: 50px 25px; margin-top: 0px;">
+
+
+		<p
+			style="color: #444444; font-family: sans-serif; font-size: 25px !important;">
+			THE EASIEST DIGITAL LOYALTY SYSTEM FOR INDEPENDENT BUSINESSES</p>
+		<p
+			style="color: #444444; font-family: sans-serif; font-size: 25px !important;">
+			Create and launch your own in-store loyalty program in just 3 minutes
+		</p>
+
+		<p
+			style="color: #222222; font-family: sans-serif; font-size: 35px !important; font-weight: bold;">
+			Find out how you can drive more repeat customers automatically with a
+			quick demo.</p>
+		<br>
+
+		<div class="row ">
+			<div class="col-sm-offset-2 col-sm-8">
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/customerAttraction.jpg" alt="Merchant Logo"
+								class="img-rounded img-responsive center-block">
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center"
+								style="font-size: 25px; font-weight: bold;">Attract More
+								Customers</p>
+							<p class="text-center" style="font-size: 20px">Turn your
+								store front traffic to potential customer</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/WorkFlow_3.jpg" alt="Merchant Logo"
+								class="img-rounded img-responsive center-block">
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center"
+								style="font-size: 25px; font-weight: bold;">Personalized
+								Marketing Campaigns</p>
+							<p class="text-center" style="font-size: 20px">Send the right
+								SMS message to the right customer at the right time and watch
+								your revenue skyrocket</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/customerLoyalty.jpg" alt="Merchant Logo"
+								class="img-rounded img-responsive center-block">
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center"
+								style="font-size: 25px; font-weight: bold;">Build Customer
+								Database</p>
+							<p class="text-center" style="font-size: 20px">Segment your
+								customers and deploy targeted promotion message right from your
+								dashboard</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+	</div>
+
+	<!-- feature part -->
+	<div id="features" class="container-fluid text-center"
+		style="background-color: #777777; color: #fff; font-family: Montserrat, sans-serif; padding: 0px 25px;">
+		<p
+			style="color: #eee; font-family: sans-serif; font-size: 50px !important; font-weight:;">
+			Amazing Feature For Your Business</p>
+		<br>
+		<div class="row ">
+			<div class="col-sm-offset-2 col-sm-8">
+				<img src="__IMG__/NeoFeature.jpg" alt="Neo Features"
+					class="img-rounded img-responsive center-block">
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row ">
+			<div class="col-sm-offset-2 col-sm-8">
+				<p
+					style="color: #eee; font-family: sans-serif; font-size: 50px !important; font-weight:;">
+					Here's how it works</p>
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-sm-offset-3 col-sm-6">
+				<div class="col-sm-offset-2 col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/WorkFlow_1.jpg" alt="Neo Work Flow 1"
+								class="img-rounded img-responsive center-block">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 30px !important;">
+								Neo helps you create a custom loyalty program</p>
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 20px !important; font-weight:;">
+								To fit your requirements from simple to complex, Neo will help
+								you craft the perfect program for your business</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="row ">
+			<div class="col-sm-offset-3 col-sm-6">
+				<div class="col-sm-offset-2 col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/WorkFlow_2.jpg" alt="Neo Work Flow 2"
+								class="img-rounded img-responsive center-block">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 30px !important;">
+								Customers sign up easily by scan the QR code</p>
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 20px !important; font-weight:;">
+								Easy sign up by scan the QR code logo hanging up in your store
+								or store front. No in store service is required.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="row ">
+			<div class="col-sm-offset-3 col-sm-6">
+				<div class="col-sm-offset-2 col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/WorkFlow_3.jpg" alt="Neo Work Flow 3"
+								class="img-rounded img-responsive center-block">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 30px !important;">
+								Run your marketing & promotion campaign from your dashboard</p>
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 20px !important; font-weight:;">
+								Neo enables you run customized marketing or promotion campaign
+								to sign up customers with SMS texting and email.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="row ">
+			<div class="col-sm-offset-3 col-sm-6">
+				<div class="col-sm-offset-2 col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<img src="__IMG__/WorkFlow_4.jpg" alt="Neo Work Flow 4"
+								class="img-rounded img-responsive center-block">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 250px">
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 30px !important;">
+								Know more about your customer and data</p>
+							<p class="text-left"
+								style="color: #555555; font-family: sans-serif; font-size: 20px !important; font-weight:;">
+								Powered by Neo, you will know more about your customers and own
+								all of the data, including contact information and notes.
+								Attract more customers and keep them engaged.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+
+	</div>
+
+	<!-- Solution part -->
+	<div id="solution" class="container-fluid text-center"
+		style="background-color: #eeeeee; color: #222222; font-family: Montserrat, sans-serif; padding: 50px 25px; margin-top: 0px;">
+
+		<div class="row ">
+			<div class="col-sm-offset-2 col-sm-8">
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 170px; color: #0055aa;">
+							<i class="fa fa-bullhorn fa-4x fa-align-center fa-vc"></i>
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center" style="font-size: 25px; color: #0055aa;">Ad
+								/ Marketing Agencies</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 170px; color: #0055aa;">
+							<i class="fa fa-shopping-bag fa-4x fa-align-center fa-vc"></i>
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center" style="font-size: 25px; color: #0055aa;">Super
+								Stores / Shops</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 170px; color: #0055aa;">
+							<i class="fa fa-cutlery fa-4x fa-align-center fa-vc"></i>
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center" style="font-size: 25px; color: #0055aa;">Restaurants</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row ">
+			<div class="col-sm-offset-2 col-sm-8">
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 170px; color: #0055aa;">
+							<i class="fa fa-beer fa-4x fa-align-center fa-vc"></i>
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center" style="font-size: 25px; color: #0055aa;">Bars</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 170px; color: #0055aa;">
+							<i class="fa fa-newspaper-o fa-4x fa-align-center fa-vc"></i>
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center" style="font-size: 25px; color: #0055aa;">Media</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="panel panel-default" style="font-size: 25px">
+						<div class="panel-body" style="height: 170px; color: #0055aa;">
+							<i class="fa fa-university fa-4x fa-align-center fa-vc"></i>
+						</div>
+						<div class="panel-footer text-center">
+							<p class="text-center" style="font-size: 25px; color: #0055aa;">Trads
+								Shows / Exhibitions</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- More info part -->
+	<div id="more_info" class="container-fluid text-center"
+		style="background-color: #ca856a; color: #fff; font-family: Montserrat, sans-serif; padding: 0px 25px;">
+		<br> <br>
+		<include file="Public:get_more_info_form_tpl" />
+		<br>
+	</div>
+
+	<!-- business part -->
+	<div id="contact" class="container-fluid text-center"
+		style="background-color: #eeeeee; color: #fff; font-family: Montserrat, sans-serif; padding: 0px 25px;">
+		<br>
+		<include file="Public:general_enquiry_msg_form" />
+	</div>
+
+	<!-- Foot part define-->
+	<include file="Public:main_footer" />
+
+
+</body>
+</html>

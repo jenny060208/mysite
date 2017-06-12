@@ -1,0 +1,1894 @@
+[ 2017-05-01T09:59:10-05:00 ] ::1 /neo1/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-05-01T10:02:40-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-05-01T10:03:54-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-05-01T10:05:28-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000476s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-05-01T10:06:01-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-05-01T10:10:31-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-05-01T10:16:06-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-05-01T10:19:47-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-05-01T10:20:21-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000507s ]
+
+[ 2017-05-01T10:21:01-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+
+[ 2017-05-01T10:21:19-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-05-01T10:21:22-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-05-01T10:21:23-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-05-01T10:21:23-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-05-01T10:21:37-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-05-01T10:21:38-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-05-01T10:21:39-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-05-01T10:21:39-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-05-01T10:21:40-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-05-01T10:21:56-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-05-01T10:22:12-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-05-01T10:22:22-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-05-01T10:24:48-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+
+[ 2017-05-01T10:25:24-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-05-01T10:28:15-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-05-01T10:28:32-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-05-01T10:47:03-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-05-01T10:47:10-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-05-01T10:48:10-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-05-01T10:48:11-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-05-01T10:48:12-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-05-01T10:48:12-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-05-01T10:48:12-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-05-01T10:49:22-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-05-01T10:52:38-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-05-01T10:53:13-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-05-01T10:53:29-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000710s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000861s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-05-01T10:53:41-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-05-01T10:53:54-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-05-01T10:54:02-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-05-01T10:54:20-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-05-01T11:00:24-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+
+[ 2017-05-01T11:00:49-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-05-01T11:01:13-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000602s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-05-01T11:01:27-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-05-01T11:01:42-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-05-01T11:11:52-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+
+[ 2017-05-01T11:12:43-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-05-01T11:12:58-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-05-01T11:13:19-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-05-01T11:13:29-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-05-01T11:13:51-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-05-01T11:14:00-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+
+[ 2017-05-01T11:14:10-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-05-01T11:14:32-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-05-01T11:19:09-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+
+[ 2017-05-01T11:19:52-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+
+[ 2017-05-01T11:23:20-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-05-01T11:24:09-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-05-01T11:24:43-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-05-01T11:24:44-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-05-01T11:24:45-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+
+[ 2017-05-01T11:25:01-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-05-01T11:25:11-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-05-01T11:28:38-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+
+[ 2017-05-01T11:36:28-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-05-01T11:46:48-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000554s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-05-01T11:53:18-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001075s ]
+
+[ 2017-05-01T12:35:54-05:00 ] ::1 /neo1/index.php/home/user/signin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\UserController.class.php 第 15 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\UserController.class.php on line 105 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-05-01T16:56:36-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.047069s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.042221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042358s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.530758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.530912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030227s ]
+
+[ 2017-05-01T17:00:35-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-05-01T17:08:31-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-05-01T17:30:57-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-05-01T17:31:57-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-05-01T17:33:02-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-05-01T17:34:11-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-05-01T17:34:18-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+
+[ 2017-05-01T17:34:41-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-05-01T17:35:57-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+
+[ 2017-05-01T17:56:59-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-05-01T18:07:39-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-05-01T18:07:41-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-05-01T18:07:41-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-05-01T18:07:42-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-05-01T18:07:42-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-05-01T18:07:42-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+
+[ 2017-05-01T18:07:42-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-05-01T18:11:38-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./NeoWeb/Home/View/Public/get_more_info_form.html): failed to open stream: No such file or directory C:\wamp64\www\neo1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-05-01T18:13:10-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-05-01T18:17:01-05:00 ] ::1 /neo1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' C:\wamp64\www\neo1\NeoWeb\Home\Conf\config.php 第 14 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in C:\wamp64\www\neo1\NeoWeb\Home\Controller\IndexController.class.php on line 19 and defined C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 86 行.
+NOTIC: [8] Undefined variable: content C:\wamp64\www\neo1\ThinkPHP\Library\Think\Controller.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+

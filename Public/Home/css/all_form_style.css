@@ -1,0 +1,319 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! css file for form related style definition */
+
+/* Using Font Awesome - http://fortawesome.github.com/Font-Awesome */
+@font-face {
+	font-family: "FontAwesome";
+	src: url('font/fontawesome-webfont.eot');
+	src: url('font/fontawesome-webfont.eot?#iefix') format('eot'),
+		url('font/fontawesome-webfont.woff') format('woff'),
+		url('font/fontawesome-webfont.ttf') format('truetype'),
+		url('font/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Postfix and Prefix styling start here */
+.ppfix {
+	margin: 0;
+	vertical-align: top;
+	display: inline-block;
+	font-family: "Pontano Sans";
+	font-size: 30px;
+	color: #343434;
+	min-width: 250px;
+	height: 40px;
+	background: #fbfbfb;
+	border: 1px solid #cccdcf;
+	padding: 8px 10px;
+	box-shadow: inset 0 2px 3px #e8e8e8;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.ppfix:focus {
+	outline: none;
+	border: 5px solid #cc55cf;
+}
+
+.post {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+}
+
+.postfix {
+	vertical-align: top;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 8px 10px;
+	background: #a2a2a2;
+	border: 1px solid #cccdcf;
+	border-left: 0;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+}
+
+.postfix {
+	font-family: FontAwesome;
+	line-height: 1.5em;
+	font-size: 16px;
+	color: #737373;
+}
+
+.postfix.green {
+	background: #b8e172;
+	background: -moz-linear-gradient(top, #b8e172 0%, #74ad37 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8e172),
+		color-stop(100%, #74ad37));
+	background: -webkit-linear-gradient(top, #b8e172 0%, #74ad37 100%);
+	background: -o-linear-gradient(top, #b8e172 0%, #74ad37 100%);
+	background: -ms-linear-gradient(top, #b8e172 0%, #74ad37 100%);
+	background: linear-gradient(to bottom, #b8e172 0%, #74ad37 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e172',
+		endColorstr='#74ad37', GradientType=0);
+	border: 1px solid #689b32;
+	color: #fff;
+}
+
+.postfix.blue {
+	background: #79a8d9;
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5YThkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1MThlY2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #79a8d9 0%, #518ece 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #79a8d9),
+		color-stop(100%, #518ece));
+	background: -webkit-linear-gradient(top, #79a8d9 0%, #518ece 100%);
+	background: -o-linear-gradient(top, #79a8d9 0%, #518ece 100%);
+	background: -ms-linear-gradient(top, #79a8d9 0%, #518ece 100%);
+	background: linear-gradient(to bottom, #79a8d9 0%, #518ece 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79a8d9',
+		endColorstr='#518ece', GradientType=0);
+	border: 1px solid #3d81c8;
+	color: #fff;
+}
+
+span.postfix.email:before {
+	content: "\f003";
+}
+
+span.postfix.link:before {
+	content: "\f0c1";
+}
+
+span.postfix.external-link:before {
+	content: "\f08e";
+}
+
+span.postfix.attach:before {
+	content: "\f0c6";
+}
+
+span.postfix.tag:before {
+	content: "\f02c";
+}
+
+span.postfix.home:before {
+	content: "\f015";
+}
+
+span.postfix.key:before {
+	content: "\f084";
+}
+
+span.postfix.credit-card:before {
+	content: "\f09d";
+}
+
+span.postfix.cart:before {
+	content: "\f07a";
+}
+
+span.postfix.user:before {
+	content: "\f007";
+}
+
+span.postfix.trash:before {
+	content: "\f014";
+}
+
+span.postfix.folder:before {
+	content: "\f07c";
+}
+
+span.postfix.save:before {
+	content: "\f0c7";
+}
+
+span.postfix.marker:before {
+	content: "\f041";
+}
+
+span.postfix.setting:before {
+	content: "\f085";
+}
+
+span.postfix.edit:before {
+	content: "\f044";
+}
+
+span.postfix.bookmark:before {
+	content: "\f097";
+}
+
+span.postfix.calendar:before {
+	content: "\f073";
+}
+
+span.postfix.gplus:before {
+	content: "\f0d5";
+}
+
+span.postfix.twitter:before {
+	content: "\f099";
+}
+
+span.postfix.github:before {
+	content: "\f09b";
+}
+
+span.postfix.pinterest:before {
+	content: "\f0d2";
+}
+
+span.postfix.linkedin:before {
+	content: "\f0e1";
+}
+
+span.postfix.facebook:before {
+	content: "\f09a";
+}
+
+span.postfix.phone:before {
+	content: "\f095";
+}
+
+span.postfix.map_marker:before {
+	content: "\f041";
+}
+
+/* Register with email button style  */
+.register_email_button {
+	background-color: #ECAB15;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 23px;
+	font-weight: bold;
+	padding: 10px 50px;
+	text-decoration: none;
+}
+
+.register_email_button:hover {
+	background-color: #dC9b15;
+}
+
+.register_facebook_button {
+	background-color: #2266ef;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+
+.register_facebook_button:hover {
+	background-color: #019ad2;
+}
+
+.register_facebook_container_div_style {
+	position: relative;
+	float: top;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 15%;
+}
+
+.register_email_container_div_style {
+	position: relative;
+	float: top;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 60%;
+}
+
+.register_email_container_table_style {align = "center";
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	font-size: 15px;
+}
+
+.register_note_container_div_style {
+	position: relative;
+	float: top;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 10%;
+}
+
+/*Sign in page content container style */
+/* --------------------------------------------- */
+.sign_in_facebook_container_div_style {
+	position: relative;
+	float: top;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 25%;
+}
+
+.sign_in_email_container_div_style {
+	position: relative;
+	float: top;
+	top: 10%;
+	left: 5%;
+	width: 90%;
+	height: 40%;
+}
+
+.sign_in_email_container_table_style {align = "center";
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	font-size: 15px;
+}
+
+.sign_in_note_container_div_style {
+	position: relative;
+	float: top;
+	top: 15%;
+	left: 5%;
+	width: 90%;
+	height: 5%;
+}

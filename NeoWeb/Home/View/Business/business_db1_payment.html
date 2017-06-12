@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<TITLE>Neo Reward System</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap CSS definition-->
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+
+<!-- main page style CSS definition -->
+<link rel="stylesheet" href="__CSS__/mainpage.css" type="text/css">
+<!-- Script files definition -->
+<script type="text/javascript" src="__JS__/form_utilities.js"></script>
+<script type="text/javascript">
+      jQuery(function($)
+      {
+        $(document).ready(function()
+        {
+          var objArray = [];　 // Create a new array
+          
+          //Highlight the active button
+          // First one is hightlighted as active button
+          objArray.push(document.getElementById("button_payment_id")); 
+          objArray.push(document.getElementById("button_profile_id")); 
+          objArray.push(document.getElementById("button_general_id")); 
+          objArray.push(document.getElementById("button_status_id")); 
+          db1ToolButtonHighlight(objArray);
+          
+          
+          var selectId = document.getElementById("set_up_fee_id");
+          addSelectOptions(selectId, {$setUpFeeJson});
+ 
+          
+          
+          
+        });
+        
+        //Message form process
+        var objSubmitBut = document.getElementById("button_msg_form");
+        $(objSubmitBut).click(function ()
+        {
+          var objForm = document.getElementById("bn_temp_msg_form");
+          var objSubject = document.getElementById("fm_subject");
+          var objMsgBody = document.getElementById("fm_message");
+          var strAction = "{:U('Business/business_db1_msg_form')}";
+          db1FormProcess(objForm, objSubject, objMsgBody, strAction);
+        });
+        
+        var selectObj = document.getElementById("set_up_fee_id");
+        selectObj.onchange = function()
+        {
+          alert(selectObj.value);      //取select控件被选中的值
+        }
+        
+        
+        
+        
+      });
+    </script>
+
+<style>
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+</style>
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!--Top part define-->
+	<include file="Public:business_navi_sign_in" />
+
+	<!-- Content container part define-->
+	<div class="container-fluid" style="margin-top: 50px;">
+		<include file="Public:bn_tpl_db1_toolbar_1" />
+
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-sm-offset-1 col-sm-5">
+				<!-- Account Profile table-->
+				<div class="panel panel-default">
+					<div class="panel-heading"
+						style="font-size: 20px; font-weight: bold; color: #ffffff; background-color: #7B72E9; vertical-align: middle; text-align: center">
+						Make Payment</div>
+					<div class="panel-body">
+						<form class="form-horizontal" id="form_profile"
+							name="form_profile" method="post" action="__SELF__">
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="service_type_id">Service
+									Type:</label>
+								<div class="col-sm-9">
+									<select class="form-control" name="service_type_id"
+										id="service_type_id">
+										<option>ON -- Ontario</option>
+										<option>QC -- Quebec</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="set_up_fee_id">Set
+									Up Fee:</label>
+								<div class="col-sm-9">
+									<select class="form-control" name="set_up_fee_id"
+										id="set_up_fee_id">
+
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="monthly_fee_id">Monthly
+									Fee:</label>
+								<div class="col-sm-9">
+									<select class="form-control" name="monthly_fee_id"
+										id="monthly_fee_id">
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="service_term_id">Service
+									Term (Months):</label>
+								<div class="col-sm-9">
+									<select class="form-control" name="service_term_id"
+										id="service_term_id">
+										<option>ON -- Ontario</option>
+										<option>QC -- Quebec</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="store_number_id">Number
+									of Stores :</label>
+								<div class="col-sm-9">
+									<select class="form-control" name="store_number_id"
+										id="store_number_id">
+
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="amount_id">Total
+									Amount:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="amount_id"
+										id="amount_id" readonly="readonly">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label col-sm-3" for="amount_tax_id">Total
+									amount include tax:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="amount_tax_id"
+										id="amount_tax_id" readonly="readonly">
+								</div>
+							</div>
+							<div class="form-group">
+								<table class="col-sm-offset-1 col-sm-10">
+									<tbody>
+										<tr>
+											<td style="vertical-align: middle; padding: 10px">
+												<button type="button" id="profile_update_submit"
+													class="submit_button_style">Pay by Credit Card /
+													Paypal</button>
+											</td>
+											<td style="vertical-align: middle; padding: 10px">
+												<button type="button" id="profile_update_submit"
+													class="submit_button_style">Pay by Bank Email
+													Transfer</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-5">
+				<!-- Account Status table-->
+				<table class="table table-bordered">
+					<caption class="bn_db1_payment_style_1">Account Balance</caption>
+					<tbody>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">My
+								balance is:</td>
+							<td style="vertical-align: middle; text-align: left;">{$paymentInfo["balance"]}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-bordered" style="margin-top: 50px;">
+					<caption class="bn_db1_payment_style_1">Payment Method</caption>
+					<tbody>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">E-Transfer:</td>
+							<td style="vertical-align: middle; text-align: left;">Plase
+								make payment to this email address: {$payment["e_trans_email"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">Paypal:</td>
+							<td style="vertical-align: middle; text-align: left;">Credit
+								card is processed through Paypal, please make payment to this
+								email: {$payment["paypal_id"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">Note:</td>
+							<td style="vertical-align: middle; text-align: left;">Payment
+								can be made with two methods above.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<include file="Public:bn_tpl_db1_msg_form" />
+	</div>
+
+
+	<br>
+	<br>
+	<footer class="container-fluid"
+		style="font-weight: bold; font-size: 20px !important;">
+		<p>Neo Reward -- Get Your Clients Connected</p>
+	</footer>
+
+
+
+
+</body>
+</html>

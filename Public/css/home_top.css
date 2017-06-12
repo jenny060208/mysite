@@ -1,0 +1,189 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! CSS file for home module head style  */
+
+/* Top head container style */
+/* Style defined for Top information */
+/* --------------------------------------------- */
+.top_style {
+	background-color: black;
+	color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-family: verdana;
+	border: 0px;
+	width: 90%;
+	height: 500px;
+	opacity: 0.75;
+}
+
+/*top head container style 2 */
+.top_2_style {
+	background-color: black;
+	color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-family: verdana;
+	border: 0px;
+	width: 90%;
+	height: 100px;
+	opacity: 0.75;
+}
+
+/* Logo 1 style definition  */
+.company_logo_1_style {
+	position: absolute;
+	left: 300px;
+	top: 80px;
+}
+
+.find_location_style {
+	position: absolute;
+	top: 70px;
+	left: 55%;
+	text-align: center;
+	font-size: 25px;
+}
+
+.for_business_style {
+	position: absolute;
+	top: 70px;
+	left: 68%;
+	text-align: center;
+	font-size: 25px;
+	color: #6b6d70;
+	text-decoration: none
+}
+
+.button_sign_in_div {
+	position: absolute;
+	top: 85px;
+	left: 80%;
+}
+
+/* Defind for top part other than index page*/
+.company_logo_1_2_style {
+	position: relative;
+	float: left;
+	top: 30%;
+	left: 20%;
+}
+
+.find_location_2_style {
+	position: relative;
+	float: left;
+	top: 13%;
+	left: 42%;
+	text-align: center;
+	font-size: 25px;
+}
+
+.for_business_2_style {
+	position: relative;
+	float: left;
+	top: 13%;
+	left: 45%;
+	text-align: center;
+	font-size: 25px;
+	color: #6b6d70;
+	text-decoration: none
+}
+
+.user_sign_in_name_div {
+	position: relative;
+	float: left;
+	top: 30%;
+	left: 50%;
+}
+
+.button_sign_in_2_div {
+	position: relative;
+	float: left;
+	top: 30%;
+	left: 50%;
+}
+
+/* Style defined for Top information */
+.title_msg_style {
+	position: relative;
+	float: bottom;
+	top: 180px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.button_register_div {
+	position: relative;
+	float: bottom;
+	top: 200px;
+}
+
+.top_business_owner_style {
+	position: relative;
+	float: bottom;
+	top: 250px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: #838383;
+}
+
+.register_button {
+	background-color: #2266ef;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 15px 50px;
+	text-decoration: none;
+}
+
+.register_button:hover {
+	background-color: #019ad2;
+}
+
+.register_button:active {
+	position: relative;
+	top: 1px;
+}
+
+.sign_in_button {
+	background-color: #434363;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #232323;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px 40px;
+	text-decoration: none;
+}
+
+.sign_in_button:hover {
+	background-color: #323234;
+}
+
+.sign_in_button:active {
+	position: relative;
+	top: 1px;
+}
+
+.top_business_owner_text_link_style {
+	text-decoration: none;
+	color: #C46E23;
+}
+
+.top_business_owner_text_link_style:hover {
+	text-decoration: underline;
+}

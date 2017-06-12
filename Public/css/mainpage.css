@@ -1,0 +1,353 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! CSS file for main entry page */
+@charset "utf-8";
+
+@import "home_top.css";
+
+@import "home_main_content.css";
+/* @import "home_footer.css"; */
+@import "all_form_style.css";
+/* Buttons CSS file */
+@import "buttons.css";
+
+/* Top head container style */
+/* --------------------------------------------- */
+/* content container style */
+
+/* General utility style definition */
+
+/* Link text style definition  */
+.general_text_link_style {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.general_text_link_style:hover {
+	text-decoration: underline;
+	color: #e3e3e3;
+}
+
+.general_text_link_2_style {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.general_text_link_2_style:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.general_text_link_3_style {
+	text-decoration: none;
+	color: #019ad2;
+}
+
+.general_text_link_3_style:hover {
+	text-decoration: underline;
+	color: #019ad2;
+}
+
+.general_text_link_4_style {
+	text-decoration: none;
+	color: #10cc2c;
+}
+
+.general_text_link_4_style:hover {
+	text-decoration: underline;
+	color: #eeeeee;
+}
+
+.general_text_link_5_style {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.general_text_link_5_style:hover {
+	text-decoration: none;
+	color: #d34419;
+}
+
+.general_text_link_6_style {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.general_text_link_6_style:hover {
+	text-decoration: none;
+	color: #dddddd;
+}
+
+.general_text_link_7_style {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.general_text_link_7_style:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* Top Navigation style */
+.jumbotron {
+	background-color: #f4511e;
+	color: #fff;
+	padding: 100px 25px;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #ca856a;
+	z-index: 9999;
+	border: 0;
+	font-size: 20px !important;
+	line-height: 1.42857143 !important;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #dddddd !important;
+	line-height: 50px;
+	height: 50px;
+	padding-top: 0;
+}
+
+.navbar-nav li a:hover {
+	color: #ca856a !important;
+	background-color: #dddddd !important;
+}
+
+.navbar-nav li.active a {
+	color: #ca856a !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.navi-btn-default {
+	color: #eeeeee !important;
+	background-color: #f4511e !important;
+	font-size: 20px !important;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	height: 50px;
+}
+
+.navi-btn-default:hover {
+	color: #ffffff !important;
+	background-color: #f4511e !important;
+}
+
+.navi-drop-down-btn {
+	color: #eeeeee;
+	background-color: #f4511e;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navi-drop-down-btn:hover {
+	color: #ffffff;
+	background-color: #f4511e;
+}
+
+.submit_button_style {
+	background-color: #ECAB15;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 30px;
+	text-decoration: none;
+}
+
+.submit_button_style:hover {
+	background-color: #dC9b15;
+}
+
+.submit_button_style_2 {
+	background-color: #5588cd;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 35px;
+	font-weight: bold;
+	padding: 10px 100px;
+	text-decoration: none;
+}
+
+.submit_button_style_2:hover {
+	background-color: #dC9b15;
+}
+
+.demo_button_style {
+	background-color: #5588cd;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px 30px;
+	text-decoration: none;
+}
+
+.demo_button_style:hover {
+	background-color: #dC9b15;
+}
+
+.get_info_button_style {
+	background-color: #A00DCA;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #eeeeee;
+	font-family: "Arial";
+	font-size: 20px;
+	font-weight: bold;
+	padding: 15px 80px;
+	text-decoration: none;
+}
+
+.get_info_button_style:hover {
+	background-color: #A50fCf;
+	color: #eeeeee;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#total {
+	width: 140px;
+	height: 140px;
+	background-color: #EC6C00;
+	margin: auto;
+}
+
+#total .money-txt {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	padding-top: 40px;
+}
+
+.img-rounded {
+	border-radius: 10px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+}
+
+/* Business template CSS definition */
+.navbar_bn {
+	margin-bottom: 0;
+	background-color: #666666;
+	z-index: 9999;
+	border: 0;
+	font-size: 20px !important;
+	line-height: 1.42857143 !important;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-radius: 0;
+}
+
+.navbar_bn li a, .navbar_bn .navbar_bn-brand {
+	color: #eeeeee !important;
+	line-height: 50px;
+	height: 50px;
+	padding-top: 0;
+}
+
+.navbar_bn-nav li a:hover {
+	color: #ca856a !important;
+	background-color: #666666 !important;
+}
+
+.navbar_bn-nav li.active a {
+	color: #ca856a !important;
+	background-color: #666666 !important;
+}
+
+.bn_sign_button_style {
+	background-color: #17b22e;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #057fd0;
+	display: inline-block;
+	cursor: pointer;
+	color: #eeeeee;
+	font-family: "Arial";
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 80px;
+	text-decoration: none;
+}
+
+.bn_sign_button_style:hover {
+	background-color: #10cc2c;
+	color: #eeeeee;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.bn_db1_status_bar_style_1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.bn_db1_status_bar_style_2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.bn_db1_payment_style_1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #7B72E9;
+	vertical-align: middle;
+	text-align: center;
+}
+
+;
+
+/* End of Top Navigation style */
+
+/* button style */
+
+/* End of button stylee */
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+	}
+}
+*
+/

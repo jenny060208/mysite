@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<TITLE>Neo Reward System</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap CSS definition-->
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet" type="text/css">
+
+<!-- main page style CSS definition -->
+<link rel="stylesheet" href="__CSS__/mainpage.css" type="text/css">
+<!-- Script files definition -->
+<script type="text/javascript" src="__JS__/form_utilities.js"></script>
+<script type="text/javascript">
+
+      jQuery(function($)
+      {
+        $(document).ready(function()
+        {
+          var objArray = [];　 // Create a new array
+          // Preset the status bar
+          objArray.push(document.getElementById("step_1_id")); 
+          objArray.push(document.getElementById("step_2_id")); 
+          objArray.push(document.getElementById("step_3_id")); 
+          objArray.push(document.getElementById("step_4_id")); 
+          objArray.push(document.getElementById("step_5_id")); 
+          objArray.push(document.getElementById("step_6_id")); 
+
+          var statusData = {$profile["status"]};
+          
+          presetDb1StatusBarProperty(objArray, statusData);
+          
+          while(objArray.length > 0) {objArray.pop();}
+          
+          //preset the profile click
+          var obj = document.getElementById("profile_detail_id");
+          setCellProperty1(obj, "{:U('Business/business_db1_profile')}");
+                  
+          // clear the array before use
+          while(objArray.length > 0) {objArray.pop();}
+                  
+          //Highlight the active button
+          // First one is hightlighted as active button
+          objArray.push(document.getElementById("button_general_id")); 
+          objArray.push(document.getElementById("button_profile_id")); 
+          objArray.push(document.getElementById("button_status_id"));
+          objArray.push(document.getElementById("button_product_id")); 
+          db1ToolButtonHighlight(objArray);
+        });
+        
+        var objSubmitBut = document.getElementById("button_msg_form");
+        $(objSubmitBut).click(function ()
+        {
+          var objForm = document.getElementById("bn_temp_msg_form");
+          var objSubject = document.getElementById("fm_subject");
+          var objMsgBody = document.getElementById("fm_message");
+          var strAction = "{:U('Business/business_db1_msg_form')}";
+          db1FormProcess(objForm, objSubject, objMsgBody, strAction);
+        });
+      });
+    </script>
+
+<style>
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+</style>
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!--Top part define-->
+	<include file="Public:business_navi_sign_in" />
+
+	<!-- Content container part define-->
+	<div class="container-fluid" style="margin-top: 50px;">
+		<include file="Public:bn_tpl_db1_toolbar_1" />
+
+		<div class="row text-left" style="margin-top: 50px;">
+			<div class="col-sm-offset-1 col-sm-10">
+				<p style="font-size: 30px; font-weight: bold; color: #7B72E9">Welcome
+					to Neo Reward -- Merchant Account Application Status:</p>
+				<table class="table table-bordered">
+					<tbody>
+						<tr>
+							<td id="step_1_id" class="bn_db1_status_bar_style_1">Step 1:
+								Register Account >></td>
+							<td id="step_2_id" class="bn_db1_status_bar_style_1">Step 2:
+								Update Profile >></td>
+							<td id="step_3_id" class="bn_db1_status_bar_style_1">Step 3:
+								Monthly Fee >></td>
+							<td id="step_4_id" class="bn_db1_status_bar_style_1">Step 4:
+								Get My Tool Kit >></td>
+							<td id="step_5_id" class="bn_db1_status_bar_style_1">Step 5:
+								Training Session >></td>
+							<td id="step_6_id" class="bn_db1_status_bar_style_1">Step 6:
+								Ready To Go !!!</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-sm-offset-1 col-sm-5">
+				<!-- Account Profile table-->
+				<table class="table">
+					<caption id="profile_detail_id"
+						style="font-size: 20px; font-weight: bold; color: #ffffff; background-color: #7B72E9; vertical-align: middle; text-align: center">
+						Account Profile (Click to edit)</caption>
+					<tbody>
+						<tr>
+							<td class="col-sm-1"
+								style="vertical-align: middle; text-align: left; font-weight: bold;">Full
+								Name:</td>
+							<td class="col-sm-2"
+								style="vertical-align: middle; text-align: left;">{$profile["full_name"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold">Company
+								Name:</td>
+							<td style="vertical-align: middle; text-align: left;">{$profile["company_name"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold">Phone
+								Num.:</td>
+							<td style="vertical-align: middle; text-align: left;">{$profile["phone"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold">Email:
+							</td>
+							<td style="vertical-align: middle; text-align: left;">{$profile["email"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold">Address:
+							</td>
+							<td style="vertical-align: middle; text-align: left;">{$profile["address"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold">Postal
+								Code:</td>
+							<td style="vertical-align: middle; text-align: left;">{$profile["postal_code"]}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-sm-5">
+				<!-- Account Status table-->
+				<table class="table table-bordered">
+					<caption
+						style="font-size: 20px; font-weight: bold; color: #ffffff; background-color: #7B72E9; vertical-align: middle; text-align: center">
+						Account Status</caption>
+					<tbody>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">Current
+								Status:</td>
+							<td style="vertical-align: middle; text-align: left;">{$status}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-bordered" style="margin-top: 50px;">
+					<caption
+						style="font-size: 20px; font-weight: bold; color: #ffffff; background-color: #7B72E9; vertical-align: middle; text-align: center">
+						Payment Method</caption>
+					<tbody>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">E-Transfer:</td>
+							<td style="vertical-align: middle; text-align: left;">Plase
+								make payment to this email address: {$payment["e_trans_email"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">Credit
+								Card:</td>
+							<td style="vertical-align: middle; text-align: left;">For
+								credit card, please make payment with Paypal:
+								{$payment["paypal_id"]}</td>
+						</tr>
+						<tr>
+							<td
+								style="vertical-align: middle; text-align: left; font-weight: bold; vertical-align: middle; text-align: left">Note:</td>
+							<td style="vertical-align: middle; text-align: left;">Payment
+								can be made with two methods above, please click for details.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+		<include file="Public:bn_tpl_db1_msg_form" />
+	</div>
+
+
+
+
+	<br>
+	<br>
+	<footer class="container-fluid"
+		style="font-weight: bold; font-size: 20px !important;">
+		<p>Neo Reward -- Get Your Clients Connected</p>
+	</footer>
+
+
+
+
+</body>
+</html>

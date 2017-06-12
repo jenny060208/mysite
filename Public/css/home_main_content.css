@@ -1,0 +1,109 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! CSS file for home module head style  */
+
+/*Main index page content container style */
+/* Style defined for content information */
+/* --------------------------------------------- */
+.content_index_container_style {
+	background-color: white;
+	color: black;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-family: verdana;
+	border: 1px;
+	width: 90%;
+	height: 700px;
+	opacity: 0.75;
+}
+
+/*Register page content container style */
+/* --------------------------------------------- */
+.content_register_container_style {
+	background-color: white;
+	color: black;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-family: verdana;
+	border: 0px;
+	width: 90%;
+	height: 670px;
+	opacity: 0.75;
+}
+
+.register_form_container_div_style {
+	background-color: #efefef;
+	color: black;
+	position: relative;
+	float: top;
+	left: 33%;
+	top: 5%;
+	width: 33%;
+	height: 90%;
+	border: 5px;
+}
+
+/*Sign in page content container style */
+/* --------------------------------------------- */
+.content_signin_container_style {
+	background-color: white;
+	color: black;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-family: verdana;
+	border: 0px;
+	width: 90%;
+	height: 600px;
+	opacity: 0.75;
+}
+
+.sign_in_form_container_div_style {
+	background-color: #efefef;
+	color: black;
+	position: relative;
+	float: top;
+	left: 33%;
+	top: 5%;
+	width: 33%;
+	height: 75%;
+	border: 5px;
+}
+
+.sign_in_page_dash_board {
+	position: relative;
+	float: top;
+	left: 33%;
+	top: 8%;
+	width: 33%;
+	height: 7%;
+}
+
+/*Password recover page content container style */
+/* --------------------------------------------- */
+.content_password_recover_container_style {
+	background-color: white;
+	color: black;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-family: verdana;
+	font-weight: bold;
+	border: 0px;
+	width: 90%;
+	height: 400px;
+	opacity: 0.75;
+}
+
+.password_recover_form_container_div_style {
+	background-color: #efefef;
+	color: black;
+	position: relative;
+	float: top;
+	left: 33%;
+	top: 5%;
+	width: 33%;
+	height: 90%;
+	border: 5px;
+}
