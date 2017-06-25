@@ -2606,86 +2606,6 @@ function merchantAccountCreateProcess(objArray)
 // Create Tag process
 function tagCreateProcess(objArray)
 {
-  
-  // empty check
-  var elementVerify = true;
-  var tagIndex   = $(objArray["tagIndex"]).val();
-  var tagType   = $(objArray["tagType"]).val();
-  var tagNumber   = $(objArray["tagNumber"]).val();
-  var tagLabel  = $(objArray["tagLabel"]).val();
-  var tagWebPage = $(objArray["tagWebPage"]).val();
- 
-  // empty check tag index
-  if(emptyCheck(tagIndex))
-  {
-    // change the error cell background color to red
-    changeBgColor(objArray["tagIndex"], false);
-    objArray["tagIndex"].focus();
-    elementVerify = false;
-  }
-  else
-  {
-    changeBgColor(objArray["tagIndex"], true);
-  }
-         
-  // empty check tag type
-  if(!emptyCheck(tagType))
-  {
-    // change the error cell background color to red
-    changeBgColor(objArray["tagType"], false);
-    objArray["tagType"].focus();
-    elementVerify = false;
-  }
-  else
-  {
-    changeBgColor(objArray["tagType"], true);
-  }
-  
-  // empty check tag number
-  if(!emptyCheck(tagNumber))
-  {
-    // change the error cell background color to red
-    changeBgColor(objArray["tagNumber"], false);
-    objArray["tagNumber"].focus();
-    elementVerify = false;
-  }
-  else
-  {
-    changeBgColor(objArray["tagNumber"], true);
-  }
-  
-  // empty check tag label
-  if(!emptyCheck(tagLabel))
-  {
-    // change the error cell background color to red
-    changeBgColor(objArray["tagLabel"], false);
-    objArray["tagLabel"].focus();
-    elementVerify = false;
-  }
-  else
-  {
-    changeBgColor(objArray["tagLabel"], true);
-  }
-    
-  // empty check tag web page
-  if(!emptyCheck(tagWebPage))
-  {
-    // change the error cell background color to red
-    changeBgColor(objArray["tagWebPage"], false);
-    objArray["tagWebPage"].focus();
-    elementVerify = false;
-  }
-  else
-  {
-    changeBgColor(objArray["tagWebPage"], true);
-  }
-
-  //
-  if(!elementVerify)
-  {
-    return;
-  }
-    
   var actionStr = objArray["action"];
 
   var jsonInfo = $(objArray["form"]).serializeObject();
@@ -2710,3 +2630,50 @@ function tagCreateProcess(objArray)
     }
   }
 }
+
+/** 
+ * Name: tagInfoPreload
+ * Description: preload tag info
+ * objArray -- object array
+ * optionJsonObj -- Option items in Json object format
+ * Return None
+ */
+function tagInfoPreload(objArray, optionJsonObj)
+{
+  var totalTag;
+
+  console.log(optionJsonObj);
+//==========================================================
+  totalTag = Number(optionJsonObj.total_tag);
+  
+  if(totalTag == 0)
+  {
+    objArray["totalTag"].innerHTML = optionJsonObj.total_tag;
+    objArray["currentTag"].innerHTML = "0";
+    return;
+  }
+  eles
+  {
+    objArray["totalTag"].innerHTML = optionJsonObj.total_tag;
+    objArray["currentTag"].innerHTML = optionJsonObj.current_tag;
+  }
+
+  $(objArray["tagId"]).val(optionJsonObj.tag_id);
+  $(objArray["tagIndex"]).val(optionJsonObj.tag_index);
+  $(objArray["tagNumber"]).val(optionJsonObj.tag_number);
+  $(objArray["tagBid"]).val(optionJsonObj.bid);
+  $(objArray["tagLabel"]).val(optionJsonObj.tag_label);
+  $(objArray["tagWebPage"]).val(optionJsonObj.tag_webpage);
+  
+  $(objArray["tagStatus"]).val(optionJsonObj.service_term);
+  $(objArray["tagType"]).val(optionJsonObj.store_quantity);
+
+  // Load tag status options
+  addSelectOptions2(objArray["tagStatus"], optionJsonObj.tag_status);
+  // Load tag type options
+  addSelectOptions2(objArray["tagType"], optionJsonObj.tag_type);
+  
+}
+
+
+

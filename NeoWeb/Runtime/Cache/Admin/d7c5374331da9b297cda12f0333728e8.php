@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 <TITLE>Neo Loyalty System</TITLE>
@@ -19,8 +18,7 @@
 	rel="stylesheet" type="text/css">
 
 <!-- main page style CSS definition -->
-<link rel="stylesheet" href="/neo1/Public/css/mainpage.css"
-	type="text/css">
+<link rel="stylesheet" href="/neo1/Public/css/mainpage.css" type="text/css">
 <!-- Script files definition -->
 <script type="text/javascript" src="/neo1/Public/js/form_utilities.js"></script>
 
@@ -59,8 +57,6 @@
 	data-offset="60">
 
 	<!--Top part define-->
-
-
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 	<!--Top Navigation part define-->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -71,17 +67,16 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand"> <img
-					src="/neo1/Public/images/ic_title_1.png" alt="Company Logo"
-					width="200" height="50"></a>
+				<a class="navbar-brand"> <img src="/neo1/Public/images/ic_title_1.png"
+					alt="Company Logo" width="200" height="50"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a>Admin Account Dashboard</a></li>
 					<li class="btn-group">
 						<button role="button" class="navi-btn-default dropdown-toggle"
-							data-toggle="dropdown"><?php echo ($ProfileName); ?>
-              <span class="caret"></span>
+							data-toggle="dropdown">
+							<?php echo ($ProfileName); ?> <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu" role="menu">
 							<li class="navi-drop-down-btn"><a
@@ -140,8 +135,7 @@
 							style="font-size: 20px; font-weight: bold; color: #ffffff; background-color: #7B72E9; vertical-align: middle; text-align: center">
 							Merchant Accounts Report</div>
 						<div class="panel-body" style="height: 250px">
-							<img src="/neo1/Public/images/WorkFlow_1.jpg"
-								alt="Neo Work Flow 1"
+							<img src="/neo1/Public/images/WorkFlow_1.jpg" alt="Neo Work Flow 1"
 								class="img-rounded img-responsive center-block">
 						</div>
 					</div>
@@ -171,8 +165,8 @@
 						<div class="panel-body" style="height: 250px">
 							<button type="button" id="merchant_account_create_modal"
 								class="btn btn-primary btn-lg btn-block" data-toggle="modal"
-								data-target="#merchantAccountCreateModal">Create Merchant
-								Account</button>
+								data-target="#merchantAccountCreateModal">Create
+								Merchant Account</button>
 							<hr
 								style="border-color: -moz-use-text-color #FFFFFF; border-style: solid none; border-width: 3px 0;" />
 						</div>
@@ -199,7 +193,7 @@
 	</footer>
 
 
-	<!-- Create admin info Modal part define-->
+	<!-- Create merchant account Modal part define-->
 	<div class="modal fade" id="merchantAccountCreateModal" tabindex="-1"
 		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -209,8 +203,7 @@
 				</div>
 				<div class="modal-body">
 					<form class="form-horizontal" id="form_merchant_account_create"
-						name="form_admin_account" method="post"
-						action="/neo1/index.php/admin/admin/admin_board_merchant.html">
+						name="form_admin_account" method="post" action="/neo1/index.php/admin/admin/admin_board_merchant.html">
 						<div class="form-group">
 							<label class="control-label col-sm-3" for="n_first_name">First
 								Name:</label>
@@ -251,7 +244,7 @@
 									id="n_phone" placeholder="Enter phone number">
 							</div>
 						</div>
-
+  
 						<div class="form-group">
 							<label class="control-label col-sm-3" for="n_mobile">Mobile:</label>
 							<div class="col-sm-9">

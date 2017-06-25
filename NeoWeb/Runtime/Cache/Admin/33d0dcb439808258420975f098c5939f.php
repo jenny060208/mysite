@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 <TITLE>Neo Reward System</TITLE>
@@ -19,10 +18,9 @@
 	rel="stylesheet" type="text/css">
 
 <!-- main page style CSS definition -->
-<link rel="stylesheet" href="/neo1/Public/css/mainpage.css"
-	type="text/css">
+<link rel="stylesheet" href="/Neo1/Public/css/mainpage.css" type="text/css">
 <!-- Script files definition -->
-<script type="text/javascript" src="/neo1/Public/js/form_utilities.js"></script>
+<script type="text/javascript" src="/Neo1/Public/js/form_utilities.js"></script>
 
 <style>
 #pwRecoverModal {
@@ -87,26 +85,25 @@
 
 	<!--Top part define-->
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target="#myNavbar">
-					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand"> <img
-					src="/neo1/Public/images/ic_title_1.png" alt="Company Logo"
-					width="200" height="50"></a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li
-						style="font-size: 30px !important; font-weight: bold; color: #eeeeee;">Engage
-						Your Customers</li>
-				</ul>
-			</div>
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#myNavbar">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand"> <img src="/Neo1/Public/images/ic_title_1.png"
+				alt="Company Logo" width="200" height="50"></a>
 		</div>
-	</nav>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li
+					style="font-size: 30px !important; font-weight: bold; color: #eeeeee;">Engage
+					Your Customers</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 
 
@@ -165,11 +162,11 @@
 
 	<!-- Foot part define-->
 	<br>
-	<br>
-	<footer class="container-fluid "
-		style="background-color: #ca856a; color: #ffffff; font-family: Montserrat, sans-serif; font-weight: bold; font-size: 20px !important;">
-		<p>Neo Loyalty -- Control Panel</p>
-	</footer>
+<br>
+<footer class="container-fluid "
+	style="background-color: #ca856a; color: #ffffff; font-family: Montserrat, sans-serif; font-weight: bold; font-size: 20px !important;">
+	<p>Neo Loyalty -- Control Panel</p>
+</footer>
 
 
 	<!-- Create account Modal part define-->

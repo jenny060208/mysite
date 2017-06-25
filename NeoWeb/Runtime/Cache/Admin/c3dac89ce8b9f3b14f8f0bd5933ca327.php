@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 <TITLE>Neo Loyalty System</TITLE>
@@ -19,8 +18,7 @@
 	rel="stylesheet" type="text/css">
 
 <!-- main page style CSS definition -->
-<link rel="stylesheet" href="/neo1/Public/css/mainpage.css"
-	type="text/css">
+<link rel="stylesheet" href="/neo1/Public/css/mainpage.css" type="text/css">
 <!-- Script files definition -->
 <script type="text/javascript" src="/neo1/Public/js/form_utilities.js"></script>
 
@@ -60,8 +58,6 @@
 	data-offset="60">
 
 	<!--Top part define-->
-
-
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 	<!--Top Navigation part define-->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -72,17 +68,16 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand"> <img
-					src="/neo1/Public/images/ic_title_1.png" alt="Company Logo"
-					width="200" height="50"></a>
+				<a class="navbar-brand"> <img src="/neo1/Public/images/ic_title_1.png"
+					alt="Company Logo" width="200" height="50"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a>Admin Account Dashboard</a></li>
 					<li class="btn-group">
 						<button role="button" class="navi-btn-default dropdown-toggle"
-							data-toggle="dropdown"><?php echo ($ProfileName); ?> 
-              <span class="caret"></span>
+							data-toggle="dropdown">
+							<?php echo ($ProfileName); ?> <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu" role="menu">
 							<li class="navi-drop-down-btn"><a
