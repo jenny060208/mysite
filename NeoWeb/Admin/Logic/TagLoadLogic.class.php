@@ -50,28 +50,37 @@ class TagLoadLogic extends Logic
         // Tag Info query
         $queryResult = $mModel->getTagInfo($count);
 
-        if (! is_bool($queryResult)) {
+        if (CommonDefinition::SUCCESS == $queryResult["status"]) {
             $result["status"] = CommonDefinition::SUCCESS;
 
-            $result["info"]["fullName"] = $queryResult->getFullName();
-            $result["info"]["companyName"] = $queryResult->getBusinessName();
-            $result["info"]["email"] = $queryResult->getEmail();
-            $result["info"]["altEmail"] = $queryResult->getEmailAlt();
-            $result["info"]["phone"] = $queryResult->getPhone();
-            $result["info"]["mobile"] = $queryResult->getMobile();
-            $result["info"]["type"] = $bnUtil->getBusinessType($queryResult->getBnType());
-            $result["info"]["address"] = $queryResult->getAddress();
-            $result["info"]["city"] = $queryResult->getCity();
-            $result["info"]["province"] = $bnUtil->getProvinceName($queryResult->getProvince());
-            $result["info"]["country"] = $bnUtil->getCountryName($queryResult->getCountry());
-            $result["info"]["postalCode"] = $queryResult->getPostalCode();
-            $result["info"]["regDate"] = $queryResult->getRegDate();
+            $result["info"]["tag_id"] = $queryResult->getTagId();
+            $result["info"]["tag_index"] = $queryResult->getTagIndex();
+            $result["info"]["tag_number"] = $queryResult->getTagNumber();
+            $result["info"]["bid"] = $queryResult->getBusinessId();
+            $result["info"]["tag_label"] = $queryResult->getTagLabel();
+            $result["info"]["tag_webpage"] = $queryResult->getWebPage();
+            $result["info"]["current_tag"] = $queryResult->getCurrentTag();
+            $result["info"]["total_tag"] = $queryResult->getTotalTag();
+            $result["info"]["total_status"] = $queryResult->getTagStatus();
+            $result["info"]["total_type"] = $queryResult->getTagType();
 
-            $dbModel->close();
-            return ($result);
+            // Load the tag type definition
+            for ($count = 0; $count < sizeof(CommonDefinition::TAG_TYPE_DEF); $count ++) {
+                $result["info"]["tag_type_def"][$count] = CommonDefinition::TAG_TYPE_DEF[$count];
+            }
+
+            // Load the tag status defition
+            for ($count = 0; $count < sizeof(CommonDefinition::TAG_STATUS_DEF); $count ++) {
+                $result["info"]["tag_status_def"][$count] = CommonDefinition::TAG_STATUS_DEF[$count];
+            }
         } else {
-            $dbModel->close();
-            return (false);
+            $result["status"] = CommonDefinition::ERROR;
+
+            $result["info"]["current_tag"] = $queryResult->getCurrentTag();
+            $result["info"]["total_tag"] = $queryResult->getTotalTag();
         }
+
+        $dbModel->close();
+        return ($result);
     }
 }

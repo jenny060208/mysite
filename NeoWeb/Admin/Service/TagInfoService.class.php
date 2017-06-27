@@ -11,6 +11,7 @@ namespace Admin\Service;
 
 use Admin\Logic\TagCreateLogic;
 use Admin\Logic\TagUpdateLogic;
+use Admin\Logic\TagLoadLogic;
 use NeoWeb\Common\Common\CommonDefinition;
 
 /**

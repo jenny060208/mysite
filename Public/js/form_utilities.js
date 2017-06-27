@@ -1642,6 +1642,39 @@ function addSelectOptions2(selectId, optionJsonObj)
 }
 
 /** 
+ * Name: addSelectOptions3
+ * Description: Add option items not include value in select
+ * selectId -- Select ID
+ * optionJsonObj -- Option items in Json object format
+ * index -- selected index
+ * Return None
+ */
+function addSelectOptions3(selectId, optionJsonObj, index)
+{
+  var arrayOptions = [];
+  var optionName;
+  var optionValue;
+  var optionItem;
+  
+  // Convert the json object to array
+  for (elem in optionJsonObj) 
+  {
+    arrayOptions.push(optionJsonObj[elem]);  
+  }
+
+  for(var count = 0; count < arrayOptions.length; count++)
+  {
+    optionName = arrayOptions[count];
+    optionValue = arrayOptions[count];
+    optionItem = new Option(optionName, optionValue);
+    selectId.options.add(optionItem);
+  }
+  //Set selected item 
+  selectId.selectedIndex = Number(index) -1;
+
+}
+
+/** 
  * Name: getSelectedOptionValue
  * Description: get selected option's value
  * selectId -- Select ID
@@ -2665,13 +2698,14 @@ function tagInfoPreload(objArray, optionJsonObj)
   $(objArray["tagLabel"]).val(optionJsonObj.tag_label);
   $(objArray["tagWebPage"]).val(optionJsonObj.tag_webpage);
   
-  $(objArray["tagStatus"]).val(optionJsonObj.service_term);
-  $(objArray["tagType"]).val(optionJsonObj.store_quantity);
-
   // Load tag status options
-  addSelectOptions2(objArray["tagStatus"], optionJsonObj.tag_status);
+  addSelectOptions3(objArray["tagStatus"], optionJsonObj.tag_status_def, index);
+  
   // Load tag type options
-  addSelectOptions2(objArray["tagType"], optionJsonObj.tag_type);
+  addSelectOptions3(objArray["tagType"], optionJsonObj.tag_type_def, index);
+  
+  
+  
   
 }
 
