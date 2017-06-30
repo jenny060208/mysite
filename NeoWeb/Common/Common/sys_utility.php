@@ -973,6 +973,50 @@ class SysUtility
 
         return ($retVal);
     }
+
+    // =====================================================
+    // Name : getTagStatusIndex
+    // Input : $tagStatus-- tag status name
+    //
+    // Output: tag status index
+    //
+    //
+    //
+    // Description: get tag status index according to name
+    // =====================================================
+    public function getTagStatusIndex($tagStatus)
+    {
+        for ($count = 0; $count < sizeof(CommonDefinition::TAG_STATUS_DEF); $count ++) {
+            if (CommonDefinition::SUCCESS == strcasecmp(CommonDefinition::TAG_STATUS_DEF[$count], $tagStatus)) {
+                return ($count + 1);
+            }
+        }
+
+        // Force to Initial state
+        return (1);
+    }
+
+    // =====================================================
+    // Name : getTagTypeIndex
+    // Input : $tagType-- tag type name
+    //
+    // Output: tag type index
+    //
+    //
+    //
+    // Description: get tag type index according to name
+    // =====================================================
+    public function getTagTypeIndex($tagType)
+    {
+        for ($count = 0; $count < sizeof(CommonDefinition::TAG_TYPE_DEF); $count ++) {
+            if (CommonDefinition::SUCCESS == strcasecmp(CommonDefinition::TAG_TYPE_DEF[$count], $tagType)) {
+                return ($count + 1);
+            }
+        }
+
+        // Force to QR CODE
+        return (1);
+    }
 }
 
 ?>

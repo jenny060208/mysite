@@ -104,6 +104,48 @@ class TagManageModel extends MyModel
     }
 
     // =====================================================
+    // Name: getTagQuantity
+    // Return: quantity -- tags in Database
+    //
+    // Parameter: None
+    // Description:get tag quantity in table
+    // =====================================================
+    public function getTagQuantity()
+    {
+        $retVal = 0;
+
+        $strQuery = "SELECT " . AllTableInfoDefinition::DB_FIELD_TAG_ID . " FROM " . $this->dbTblName;
+
+        $result = $this->db->query($strQuery);
+
+        if (! is_bool($result)) {
+            $retVal = $this->db->getRowNumber();
+        }
+        return $retVal;
+    }
+
+    // =====================================================
+    // Name: getTagQuantityByStatus
+    // Return: quantity -- tags in initial status in Database
+    //
+    // Parameter: None
+    // Description:get tag quantity in initial status
+    // =====================================================
+    public function getTagQuantityByStatus($tagStatus)
+    {
+        $retVal = 0;
+
+        $strQuery = "SELECT " . AllTableInfoDefinition::DB_FIELD_TAG_ID . " FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_STATUS . "=" . '\'' . $tagStatus . '\'';
+
+        $result = $this->db->query($strQuery);
+
+        if (! is_bool($result)) {
+            $retVal = $this->db->getRowNumber();
+        }
+        return $retVal;
+    }
+
+    // =====================================================
     // Name: addTagInfo
     // Return: true -- Add new tag information succesfully
     // false -- Add new taginformation failed
@@ -225,16 +267,19 @@ class TagManageModel extends MyModel
 
         // Compose the query string
         // Query the tag id column
-        $strQuery = "DELETE FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_TAG_ID . "=" . '\'' . $tagId . "\'";
+        $strQuery = "DELETE FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_TAG_ID . "=" . '\'' . $tagId . '\'';
+
+        // echo ("Query string: " . $strQuery);
+
+        // echo ("Query result: " . $result);
 
         $result = $this->db->execute($strQuery);
 
-        if ($result == false) {
-            return ($retVal);
-        } else {
+        if ($result == true) {
             $retVal = true;
-            return $retVal;
         }
+
+        return $retVal;
     }
 
     // =====================================================
@@ -255,21 +300,21 @@ class TagManageModel extends MyModel
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_NUMBER . "=" . '\'' . $tagSet->getTagNumber() . '\', ';
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_LABEL . "=" . '\'' . $tagSet->getTagLabel() . '\', ';
         $strQuery .= AllTableInfoDefinition::DB_FIELD_BUSINESS_ID . "=" . '\'' . $tagSet->getBusinessId() . '\', ';
-        $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . "=" . '\'' . $tagSet->getStatus() . '\', ';
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . "=" . '\'' . $tagSet->getTagStatus() . '\', ';
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_WEB_PAGE . "=" . '\'' . $tagSet->getWebPage() . '\'';
         $strQuery .= " WHERE ";
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_ID . "=" . '\'' . $tagSet->getTagId() . '\'';
 
         // 'UPDATE runoob_tbl SET runoob_title="Learning JAVA" WHERE runoob_id=3';
 
+        // echo ("Query String: " . $strQuery);
+
         $result = $this->db->execute($strQuery);
 
-        if ($result == false) {
-            return ($retVal);
-        } else {
+        if ($result == true) {
             $retVal = true;
-            return $retVal;
         }
+        return $retVal;
     }
 }
 

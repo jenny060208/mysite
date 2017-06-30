@@ -56,6 +56,22 @@ class TagInfoService extends Service
     }
 
     /**
+     * Name : deleteTag
+     * Access: public
+     * Input :json message to host tag info
+     * Output: array -- tag info process process result
+     *
+     * Description: tag delete process in detail
+     */
+    public function deleteTag($recv_data)
+    {
+        $mLogic = new TagUpdateLogic();
+        $result = $mLogic->tagDelete($recv_data);
+
+        return ($result);
+    }
+
+    /**
      * Name : loadFirstTagInfo
      * Access: public
      * Input :None
@@ -68,6 +84,57 @@ class TagInfoService extends Service
         $mLogic = new TagLoadLogic();
         // get the first tag info
         $result = $mLogic->getTagInfo(1);
+
+        return ($result);
+    }
+
+    /**
+     * Name : loadPreviousTagInfo
+     * Access: public
+     * Input :$recv_data -- data from request
+     * Output: array -- get the previous specific tag info
+     *
+     * Description: get the previous specific tag info
+     */
+    public function loadPreviousTagInfo($recv_data)
+    {
+        $mLogic = new TagLoadLogic();
+        // get the previous specific tag info
+        $result = $mLogic->getPreviousTagInfo($recv_data);
+
+        return ($result);
+    }
+
+    /**
+     * Name : loadNextTagInfo
+     * Access: public
+     * Input :$recv_data -- data from request
+     * Output: array -- get the next specific tag info
+     *
+     * Description: get the next specific tag info
+     */
+    public function loadNextTagInfo($recv_data)
+    {
+        $mLogic = new TagLoadLogic();
+        // get the next specific tag info
+        $result = $mLogic->getNextTagInfo($recv_data);
+
+        return ($result);
+    }
+
+    /**
+     * Name : preLoadTagReport
+     * Access: public
+     * Input :None
+     * Output: preload tag report
+     *
+     * Description: load tag report info
+     */
+    public function preLoadTagReport()
+    {
+        $mLogic = new TagLoadLogic();
+        // get the next specific tag info
+        $result = $mLogic->getTagReport();
 
         return ($result);
     }

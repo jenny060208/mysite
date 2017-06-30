@@ -1629,6 +1629,9 @@ function addSelectOptions2(selectId, optionJsonObj)
     arrayOptions.push(optionJsonObj[elem]);  
   }
 
+  // Empty selected box before add
+  selectId.options.length = 0;
+  
   for(var count = 0; count < arrayOptions.length; count++)
   {
     optionName = arrayOptions[count];
@@ -1661,6 +1664,9 @@ function addSelectOptions3(selectId, optionJsonObj, index)
   {
     arrayOptions.push(optionJsonObj[elem]);  
   }
+
+  // Empty selected box before add
+  selectId.options.length = 0;
 
   for(var count = 0; count < arrayOptions.length; count++)
   {
@@ -2674,40 +2680,389 @@ function tagCreateProcess(objArray)
 function tagInfoPreload(objArray, optionJsonObj)
 {
   var totalTag;
+  var tagInfoObj = new Object();
+  tagInfoObj.current_tag =  objArray["currentTag"].innerHTML;
 
-  console.log(optionJsonObj);
-//==========================================================
-  totalTag = Number(optionJsonObj.total_tag);
+  var tagInfoJson =  JSON.stringify(tagInfoObj);
+  console.log(tagInfoJson);
   
-  if(totalTag == 0)
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(tagInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
   {
-    objArray["totalTag"].innerHTML = optionJsonObj.total_tag;
-    objArray["currentTag"].innerHTML = "0";
-    return;
-  }
-  eles
-  {
-    objArray["totalTag"].innerHTML = optionJsonObj.total_tag;
-    objArray["currentTag"].innerHTML = optionJsonObj.current_tag;
-  }
-
-  $(objArray["tagId"]).val(optionJsonObj.tag_id);
-  $(objArray["tagIndex"]).val(optionJsonObj.tag_index);
-  $(objArray["tagNumber"]).val(optionJsonObj.tag_number);
-  $(objArray["tagBid"]).val(optionJsonObj.bid);
-  $(objArray["tagLabel"]).val(optionJsonObj.tag_label);
-  $(objArray["tagWebPage"]).val(optionJsonObj.tag_webpage);
-  
-  // Load tag status options
-  addSelectOptions3(objArray["tagStatus"], optionJsonObj.tag_status_def, index);
-  
-  // Load tag type options
-  addSelectOptions3(objArray["tagType"], optionJsonObj.tag_type_def, index);
-  
-  
-  
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if((respData.status == 0) && (respData.info.total_tag != 0))
+      {
+        $(objArray["tagId"]).val(respData.info.tag_id);
+        $(objArray["tagIndex"]).val(respData.info.tag_index);
+        $(objArray["tagNumber"]).val(respData.info.tag_number);
+        $(objArray["tagBid"]).val(respData.info.bid);
+        $(objArray["tagLabel"]).val(respData.info.tag_label);
+        $(objArray["tagWebPage"]).val(respData.info.tag_webpage);
+        
+        objArray["totalTag"].innerHTML = respData.info.total_tag;
+        objArray["currentTag"].innerHTML = respData.info.current_tag;
+        
+     // Load tag status options
+        addSelectOptions3(objArray["tagStatus"], respData.info.tag_status_def, respData.info.tag_status);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], respData.info.tag_type_def, respData.info.tag_type);
+        
+      }
+      else
+      {
+        objArray["totalTag"].innerHTML = "0";
+        objArray["currentTag"].innerHTML =  "0";
+        
+        $(objArray["tagId"]).val(null);
+        $(objArray["tagIndex"]).val(null);
+        $(objArray["tagNumber"]).val(null);
+        $(objArray["tagBid"]).val(null);
+        $(objArray["tagLabel"]).val(null);
+        $(objArray["tagWebPage"]).val(null);
+        
+        addSelectOptions3(objArray["tagStatus"], 0, 0);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], 0, 0);
+      }
+    }
+  }  
   
 }
 
+/** 
+ * Name: tagLoadPreviousProcess
+ * Description: preload tag info
+ * objArray -- object array
+ * optionJsonObj -- Option items in Json object format
+ * Return None
+ */
+function tagLoadPreviousProcess(objArray)
+{
+  var totalTag;
+  var tagInfoObj = new Object();
+  tagInfoObj.current_tag =  objArray["currentTag"].innerHTML;
 
+  var tagInfoJson =  JSON.stringify(tagInfoObj);
+  console.log(tagInfoJson);
+  
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(tagInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if((respData.status == 0) && (respData.info.total_tag != 0))
+      {
+        $(objArray["tagId"]).val(respData.info.tag_id);
+        $(objArray["tagIndex"]).val(respData.info.tag_index);
+        $(objArray["tagNumber"]).val(respData.info.tag_number);
+        $(objArray["tagBid"]).val(respData.info.bid);
+        $(objArray["tagLabel"]).val(respData.info.tag_label);
+        $(objArray["tagWebPage"]).val(respData.info.tag_webpage);
+        
+        objArray["totalTag"].innerHTML = respData.info.total_tag;
+        objArray["currentTag"].innerHTML = respData.info.current_tag;
+        
+     // Load tag status options
+        addSelectOptions3(objArray["tagStatus"], respData.info.tag_status_def, respData.info.tag_status);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], respData.info.tag_type_def, respData.info.tag_type);
+        
+      }
+      else
+      {
+        objArray["totalTag"].innerHTML = "0";
+        objArray["currentTag"].innerHTML =  "0";
+        
+        $(objArray["tagId"]).val(null);
+        $(objArray["tagIndex"]).val(null);
+        $(objArray["tagNumber"]).val(null);
+        $(objArray["tagBid"]).val(null);
+        $(objArray["tagLabel"]).val(null);
+        $(objArray["tagWebPage"]).val(null);
+        
+        addSelectOptions3(objArray["tagStatus"], 0, 0);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], 0, 0);
+      }
+    }
+  }  
+}
 
+/** 
+ * Name: tagLoadNextProcess
+ * Description: preload tag info
+ * objArray -- object array
+ * optionJsonObj -- Option items in Json object format
+ * Return None
+ */
+function tagLoadNextProcess(objArray)
+{
+  var totalTag;
+  var tagInfoObj = new Object();
+  tagInfoObj.current_tag =  objArray["currentTag"].innerHTML;
+
+  var tagInfoJson =  JSON.stringify(tagInfoObj);
+  console.log(tagInfoJson);
+  
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(tagInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if((respData.status == 0) && (respData.info.total_tag != 0))
+      {
+        $(objArray["tagId"]).val(respData.info.tag_id);
+        $(objArray["tagIndex"]).val(respData.info.tag_index);
+        $(objArray["tagNumber"]).val(respData.info.tag_number);
+        $(objArray["tagBid"]).val(respData.info.bid);
+        $(objArray["tagLabel"]).val(respData.info.tag_label);
+        $(objArray["tagWebPage"]).val(respData.info.tag_webpage);
+        
+        objArray["totalTag"].innerHTML = respData.info.total_tag;
+        objArray["currentTag"].innerHTML = respData.info.current_tag;
+        
+     // Load tag status options
+        addSelectOptions3(objArray["tagStatus"], respData.info.tag_status_def, respData.info.tag_status);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], respData.info.tag_type_def, respData.info.tag_type);
+        
+      }
+      else
+      {
+        objArray["totalTag"].innerHTML = "0";
+        objArray["currentTag"].innerHTML =  "0";
+        
+        $(objArray["tagId"]).val(null);
+        $(objArray["tagIndex"]).val(null);
+        $(objArray["tagNumber"]).val(null);
+        $(objArray["tagBid"]).val(null);
+        $(objArray["tagLabel"]).val(null);
+        $(objArray["tagWebPage"]).val(null);
+        
+        addSelectOptions3(objArray["tagStatus"], 0, 0);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], 0, 0);
+      }
+    }
+  }
+  
+}
+
+/** 
+ * Name: tagDeleteProcess
+ * Description: preload tag info
+ * objArray -- object array
+ * optionJsonObj -- Option items in Json object format
+ * Return None
+ */
+function tagDeleteProcess(objArray)
+{
+  // Check the total tags first, if zero then return directly
+  var totalTag = Number(objArray["totalTag"].innerHTML);
+
+  if(totalTag == 0)
+  {
+    return;
+  }
+
+  var tagInfoObj = new Object();
+  tagInfoObj.current_tag =  objArray["currentTag"].innerHTML;
+  tagInfoObj.tag_id =  $(objArray["tagId"]).val();
+  
+  var tagInfoJson =  JSON.stringify(tagInfoObj);
+  console.log(tagInfoJson);
+  
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(tagInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if((respData.status == 0) && (respData.info.total_tag != 0))
+      {
+        $(objArray["tagId"]).val(respData.info.tag_id);
+        $(objArray["tagIndex"]).val(respData.info.tag_index);
+        $(objArray["tagNumber"]).val(respData.info.tag_number);
+        $(objArray["tagBid"]).val(respData.info.bid);
+        $(objArray["tagLabel"]).val(respData.info.tag_label);
+        $(objArray["tagWebPage"]).val(respData.info.tag_webpage);
+        
+        objArray["totalTag"].innerHTML = respData.info.total_tag;
+        objArray["currentTag"].innerHTML = respData.info.current_tag;
+        
+     // Load tag status options
+        addSelectOptions3(objArray["tagStatus"], respData.info.tag_status_def, respData.info.tag_status);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], respData.info.tag_type_def, respData.info.tag_type);
+        
+      }
+      else
+      {
+        objArray["totalTag"].innerHTML = "0";
+        objArray["currentTag"].innerHTML =  "0";
+        
+        $(objArray["tagId"]).val(null);
+        $(objArray["tagIndex"]).val(null);
+        $(objArray["tagNumber"]).val(null);
+        $(objArray["tagBid"]).val(null);
+        $(objArray["tagLabel"]).val(null);
+        $(objArray["tagWebPage"]).val(null);
+        
+        addSelectOptions3(objArray["tagStatus"], 0, 0);
+        
+        // Load tag type options
+        addSelectOptions3(objArray["tagType"], 0, 0);
+      }
+    }
+  }
+  
+}
+
+/** 
+ * Name: tagUpdateProcess
+ * Description: preload tag info
+ * objArray -- object array
+ * optionJsonObj -- Option items in Json object format
+ * Return None
+ */
+function tagUpdateProcess(objArray)
+{
+  // Check the total tags first, if zero then return directly
+  var totalTag = Number(objArray["totalTag"].innerHTML);
+
+  if(totalTag == 0)
+  {
+    return;
+  }
+
+  var tagInfoObj = new Object();
+  tagInfoObj.current_tag =  objArray["currentTag"].innerHTML;
+  tagInfoObj.total_tag =  objArray["totalTag"].innerHTML;
+  tagInfoObj.tag_id =  $(objArray["tagId"]).val();
+  tagInfoObj.tag_index =  $(objArray["tagIndex"]).val();
+  tagInfoObj.tag_number =  $(objArray["tagNumber"]).val();
+  tagInfoObj.tag_status = $(objArray["tagStatus"]).val();
+  tagInfoObj.tag_type = $(objArray["tagType"]).val();
+  tagInfoObj.tag_bid = $(objArray["tagBid"]).val();
+  tagInfoObj.tag_label = $(objArray["tagLabel"]).val();
+  tagInfoObj.tag_web_page = $(objArray["tagWebPage"]).val();
+
+  var tagInfoJson =  JSON.stringify(tagInfoObj);
+  console.log(tagInfoJson);
+
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(tagInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if(respData.status == 0)
+      {
+        alert(respData.info);
+      }
+     
+    }
+  }
+  
+}
+
+/** 
+ * Name: tagReportRefreshProcess
+ * Description: tag report refresh
+ * objArray -- object array
+ * 
+ * Return None
+ */
+function tagReportRefreshProcess(objArray)
+{
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send();
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      objArray["tagTotal"].innerHTML = respData.tag_report_total
+      objArray["tagInitial"].innerHTML = respData.tag_report_initial
+      objArray["tagEnable"].innerHTML = respData.tag_report_enable
+      objArray["tagDisable"].innerHTML = respData.tag_report_disable
+    }
+  }
+  
+}

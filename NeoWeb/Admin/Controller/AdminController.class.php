@@ -192,16 +192,13 @@ class AdminController extends Controller
     {
         if (isset($_SESSION["admin_id"])) {
             $adminName = $_SESSION["admin_name"];
-
-            $mService = new TagInfoService();
-            $result = $mService->loadFirstTagInfo();
-
-            if (! is_bool($result)) {
-                $tagInfoJson = json_encode($result, JSON_FORCE_OBJECT);
-                $this->assign("tagInfoJson", $tagInfoJson);
-            }
-
             $this->assign("ProfileName", $adminName);
+
+            // Load tag at page start up
+            $mService = new TagInfoService();
+            $result = $mService->preLoadTagReport();
+
+            $this->assign("tagReportInfo", $result);
 
             $this->show();
         } else {
@@ -246,6 +243,60 @@ class AdminController extends Controller
     }
 
     // ==========================================================
+    // Name : tag_load_previous_process
+    // Input : N/A
+    // Output: N/A
+    // Description: load the previous tag process
+    // ==========================================================
+    public function tag_load_first_process()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new TagInfoService();
+        $result = $mService->loadFirstTagInfo();
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : tag_load_previous_process
+    // Input : N/A
+    // Output: N/A
+    // Description: load the previous tag process
+    // ==========================================================
+    public function tag_load_previous_process()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new TagInfoService();
+        $result = $mService->loadPreviousTagInfo($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : tag_load_next_process
+    // Input : N/A
+    // Output: N/A
+    // Description: load the next tag process
+    // ==========================================================
+    public function tag_load_next_process()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new TagInfoService();
+        $result = $mService->loadNextTagInfo($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
     // Name : tag_update_process
     // Input : N/A
     // Output: N/A
@@ -258,6 +309,43 @@ class AdminController extends Controller
 
         $mService = new TagInfoService();
         $result = $mService->updateTag($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : tag_delete_process
+    // Input : N/A
+    // Output: N/A
+    // Description: update a tag process
+    // ==========================================================
+    public function tag_delete_process()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new TagInfoService();
+        $result = $mService->deleteTag($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : tag_report_refresh_process
+    // Input : N/A
+    // Output: N/A
+    // Description: refresh to read tag report
+    // ==========================================================
+    public function tag_report_refresh_process()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        // get tag report
+        $mService = new TagInfoService();
+        $result = $mService->preLoadTagReport();
 
         $this->ajaxReturn($result);
         exit();

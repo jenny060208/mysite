@@ -24,6 +24,8 @@ class CommonDefinition
 
     const ERROR_DUPLICATION_FIELD = 530;
 
+    const ERROR_NO_RECORD = 533;
+
     // Data number definition
     const ZERO_NUM = 0;
 
