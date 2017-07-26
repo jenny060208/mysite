@@ -164,12 +164,23 @@ class InstallationModel extends MyModel
             $strQuery .= AllTableInfoDefinition::DB_FIELD_PHONE . " VARCHAR(15) NOT NULL,"; // Phone
             $strQuery .= AllTableInfoDefinition::DB_FIELD_MOBILE . " VARCHAR(15),"; // Mobile
             $strQuery .= AllTableInfoDefinition::DB_FIELD_TIME . " TIMESTAMP DEFAULT CURRENT_TIMESTAMP,"; // Create date
-            $strQuery .= AllTableInfoDefinition::BN_DB_FIELD_STATUS . " TINYINT DEFAULT 1,"; // Account status
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . " TINYINT DEFAULT 1,"; // Account status
+
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_FACE_BOOK_ID . " VARCHAR(150),"; // facebook id
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_TWITTER_ID . " VARCHAR(150),"; // twitter id
+
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_REWARD_MSG . " VARCHAR(1000),"; // Tag reward message for this merchant
+
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_REGIST_SUCCESS_MSG . " VARCHAR(1000),"; // Tag user registration success message for this merchant
+
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_NOTE . " VARCHAR(2000),"; // hold note for this merchant account
+
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_WEB_PAGE . " VARCHAR(100),"; // merchant web page
 
             $strQuery .= AllTableInfoDefinition::DB_FIELD_ADDRESS . " VARCHAR(100),"; // Business Address
             $strQuery .= AllTableInfoDefinition::DB_FIELD_CITY . " VARCHAR(50),"; // Business city
-            $strQuery .= AllTableInfoDefinition::DB_FIELD_PROVINCE . " TINYINT,"; // Business province
-            $strQuery .= AllTableInfoDefinition::DB_FIELD_COUNTRY . " TINYINT,"; // Business Country
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_PROVINCE . " TINYINT DEFAULT 1,"; // province
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_COUNTRY . " TINYINT DEFAULT 1,"; // Country
             $strQuery .= AllTableInfoDefinition::DB_FIELD_POSTAL_CODE . " VARCHAR(20)"; // Business Postal Code
             $strQuery .= ")";
 
@@ -269,9 +280,8 @@ class InstallationModel extends MyModel
             $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_TYPE . " DECIMAL(1) NOT NULL,";
             $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_NUMBER . " VARCHAR(20) NOT NULL,";
             $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_LABEL . " VARCHAR(100) NOT NULL,";
-            $strQuery .= AllTableInfoDefinition::BN_DB_FIELD_ID . " VARCHAR(30) NOT NULL,";
-            $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . " TINYINT DEFAULT 1,"; // default is enabled
-            $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_WEB_PAGE . " VARCHAR(150) NOT NULL";
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_BUSINESS_ID . " VARCHAR(30) NOT NULL,";
+            $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . " TINYINT DEFAULT 1"; // default is enabled
             $strQuery .= ")";
 
             $result = $this->db->execute($strQuery);

@@ -11,10 +11,12 @@ namespace Home\Model;
 
 use Think\MyModel;
 // use NeoWeb\Common\Common\SysDefinition;
+use NeoWeb\Common\Common\SysUtility;
 use NeoWeb\Common\Common\CommonDefinition;
 use NeoWeb\Common\Common\AllTableInfoDefinition;
 use NeoWeb\Common\Common\Order1InfoSet;
 use NeoWeb\Common\Common\TagInfoSet;
+use NeoWeb\Common\Common\BusinessInfoSet;
 
 /**
  * Name : NeoModel
@@ -25,6 +27,60 @@ use NeoWeb\Common\Common\TagInfoSet;
  */
 class NeoModel extends MyModel
 {
+
+    // =====================================================
+    // Name: checkEmailDuplication
+    // Return: true -- Email duplicates in Database
+    // false -- Email does not duplicate in Database
+    // Parameter: email
+    // Description: check if email duplication in merchant account tag user register table database
+    // =====================================================
+    public function checkEmailDuplication($email)
+    {
+        $retVal = false;
+
+        // Query the email column
+        // $strQuery = 'SELECT * FROM '.$this->dbTblName.' WHERE bn_email=\''.$email.'\'';
+        // Query the email column with better performance
+        $strQuery = "SELECT " . AllTableInfoDefinition::DB_FIELD_TAG_ID . " FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_EMAIL . "=" . '\'' . $email . '\'';
+
+        $result = $this->db->query($strQuery);
+
+        if (! is_bool($result)) {
+            if ($this->db->getRowNumber() >= 1) {
+                // More than one email found, means duplication found
+                $retVal = true;
+            }
+        }
+        return $retVal;
+    }
+
+    // =====================================================
+    // Name: checkMobileDuplication
+    // Return: true -- Mobile duplicates in Database
+    // false -- Mobile does not duplicate in Database
+    // Parameter: Mobile
+    // Description: check if Mobile duplication in merchant account tag user register table database
+    // =====================================================
+    public function checkMobileDuplication($mobile)
+    {
+        $retVal = false;
+
+        // Query the mobile column
+        // $strQuery = 'SELECT * FROM '.$this->dbTblName.' WHERE bn_email=\''.$email.'\'';
+        // Query the mobile column with better performance
+        $strQuery = "SELECT " . AllTableInfoDefinition::DB_FIELD_TAG_ID . " FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_MOBILE . "=" . '\'' . $mobile . '\'';
+
+        $result = $this->db->query($strQuery);
+
+        if (! is_bool($result)) {
+            if ($this->db->getRowNumber() >= 1) {
+                // More than one mobile found, means duplication found
+                $retVal = true;
+            }
+        }
+        return $retVal;
+    }
 
     // =====================================================
     // Name: getNeoAllProductInfo
@@ -284,48 +340,172 @@ class NeoModel extends MyModel
     // =====================================================
     public function getTagInfoById($id)
     {
-        $retVal = false;
+        $tagSet = new TagInfoSet($id);
+        $tagSet->setStatus(false);
 
         // Compose the query string
         // Query the email column to get password
-        $strQuery = "SELECT " . "*" . " FROM " . $this->dbTblName . ' WHERE tag_id=\'' . $id . '\'';
+        $strQuery = "SELECT " . "*" . " FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_TAG_ID . "=" . '\'' . $id . '\'';
+
         $result = $this->db->query($strQuery);
 
         if (! is_bool($result)) {
-            if ($this->db->getRowNumber() > 0) {
+            if ($this->db->getRowNumber() >= 1) {
                 $row = $result[0]; // get row information in array format
 
-                $tagSet = new TagInfoSet($id);
-
                 $tagSet->setBusinessId($row[AllTableInfoDefinition::BN_DB_FIELD_ID]);
-                $tagSet->setTagLable($row[AllTableInfoDefinition::DB_FIELD_TAG_LABEL]);
+                $tagSet->setTagLabel($row[AllTableInfoDefinition::DB_FIELD_TAG_LABEL]);
                 $tagSet->setTagNumber($row[AllTableInfoDefinition::DB_FIELD_TAG_NUMBER]);
                 $tagSet->setWebPage($row[AllTableInfoDefinition::DB_FIELD_TAG_WEB_PAGE]);
 
-                return ($tagSet);
+                $tagSet->setStatus(true);
             }
         }
-        return $retVal;
+        return ($tagSet);
     }
 
     // =====================================================
     // Name: addTagScanEvent
     // Return: true --> add event success
     // false -- add event failed
-    // Parameter: log event data
+    // Parameter: log set data
     // Description: add log event
     // =====================================================
-    public function addTagScanEvent($eventSet)
-    {}
+    public function addTagScanEvent($setData)
+    {
+        $retVal = false;
+
+        // Compose the query string
+        $strQuery = "INSERT INTO " . $this->dbTblName . " (";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_ID . ") VALUES ( ";
+        $strQuery .= '\'' . $setData->getTagId() . '\')'; // Add tag id
+
+        $result = $this->db->execute($strQuery);
+
+        if (! is_bool($result)) {
+            $retVal = true;
+        }
+        return $retVal;
+    }
 
     // =====================================================
     // Name: addTagScanErrorEvent
     // Return: true --> add event success
     // false -- add event failed
-    // Parameter: log event data
-    // Description: add log event
+    // Parameter: log set data
+    // Description: add scan error log event
     // =====================================================
-    public function addTagScanErrorEvent($eventSet)
-    {}
+    public function addTagScanErrorEvent($setData)
+    {
+        $retVal = false;
+
+        // Compose the query string
+        $strQuery = "INSERT INTO " . $this->dbTblName . " (";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_ID . ") VALUES ( ";
+        $strQuery .= '\'' . $setData->getTagId() . '\')'; // Add tag id
+
+        $result = $this->db->execute($strQuery);
+
+        if (! is_bool($result)) {
+            $retVal = true;
+        }
+        return $retVal;
+    }
+
+    // =====================================================
+    // Name: addUserTagRegisterInfo
+    // Return: true --> add user register through tag success
+    // false -- operation failed
+    // Parameter: user set data
+    // Description: add user tag register account info
+    // =====================================================
+    public function addUserTagRegisterInfo($userSet)
+    {
+        $retVal = false;
+        // Compose the query string
+        $strQuery = "INSERT INTO " . $this->dbTblName . " (";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_FIRST_NAME . ", ";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_LAST_NAME . ", ";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_EMAIL . ", ";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_MOBILE . ", ";
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_ID . ") VALUES ( ";
+        $strQuery .= '\'' . $userSet->getFirstName() . '\', '; // Add First Name
+        $strQuery .= '\'' . $userSet->getLastName() . '\', '; // Add Last name
+        $strQuery .= '\'' . $userSet->getEmail() . '\', '; // Add Email
+        $strQuery .= '\'' . $userSet->getMobile() . '\', '; // Add Mobile number
+        $strQuery .= '\'' . $userSet->getTagId() . '\')'; // Add Tag ID
+
+        $result = $this->db->execute($strQuery);
+
+        if (! is_bool($result)) {
+            $retVal = true;
+        }
+        return $retVal;
+    }
+
+    // =====================================================
+    // Name: getMerchantAccountTableNameById
+    // Return: table name with merchant account
+    // null -- the merchant account is not found
+    // Parameter: mid
+    // Description: get business account table name for the merchant ID
+    // =====================================================
+    public function getMerchantAccountTableNameById($mid)
+    {
+        $result = null;
+        $sysUtil = new SysUtility();
+
+        for ($count = 0; $count < count(CommonDefinition::PROVINCE_INDEX_AREA_CODE); $count ++) {
+            $areaCode = CommonDefinition::PROVINCE_INDEX_AREA_CODE[$count];
+            $tblName = $sysUtil->getMerchantAccountInfoTblName($areaCode);
+
+            $this->setTableName($tblName);
+
+            $strQuery = "SELECT " . AllTableInfoDefinition::DB_FIELD_BUSINESS_NAME . " FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_BUSINESS_ID . "=" . '\'' . $mid . '\'';
+
+            $result = $this->db->query($strQuery);
+
+            if (! is_bool($result)) {
+                if ($this->db->getRowNumber() >= 1) {
+                    // More than one email found, means duplication found
+                    return ($tblName);
+                }
+            }
+        }
+
+        return ($result);
+    }
+
+    // =====================================================
+    // Name: getRegistSuccessMsg
+    // Return: regist success message for user regist through tag
+    //
+    // Parameter: mid
+    // Description: get regist success message for user regist through tag
+    // =====================================================
+    public function getRegistSuccessMsg($mid)
+    {
+        $bnSet = new BusinessInfoSet(null, null, null, null);
+
+        $strQuery = "SELECT " . "*" . " FROM " . $this->dbTblName . " WHERE " . AllTableInfoDefinition::DB_FIELD_BUSINESS_ID . '=\'' . $mid . '\'';
+
+        $result = $this->db->query($strQuery);
+
+        if (! is_bool($result)) {
+            if ($this->db->getRowNumber() >= 1) {
+                $row = $result[0]; // get row information in array format
+                $bnSet->setBusinessName($row[AllTableInfoDefinition::DB_FIELD_BUSINESS_NAME]);
+                $bnSet->setWebPage($row[AllTableInfoDefinition::DB_FIELD_WEB_PAGE]);
+                $bnSet->setFaceBookId($row[AllTableInfoDefinition::DB_FIELD_FACE_BOOK_ID]);
+                $bnSet->setTwitterId($row[AllTableInfoDefinition::DB_FIELD_TWITTER_ID]);
+                $bnSet->setEmail($row[AllTableInfoDefinition::DB_FIELD_EMAIL]);
+                $bnSet->setRewardMsg($row[AllTableInfoDefinition::DB_FIELD_TAG_REWARD_MSG]);
+                $bnSet->setSuccessMsg($row[AllTableInfoDefinition::DB_FIELD_TAG_REGIST_SUCCESS_MSG]);
+
+                $bnSet->setStatus(true);
+            }
+        }
+        return ($bnSet);
+    }
 }
 

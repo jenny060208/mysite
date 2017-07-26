@@ -138,6 +138,12 @@ class AdminController extends Controller
 
             $this->assign("ProfileName", $adminName);
 
+            // Load merchant account at page start up
+            $mService = new MerchantAccountService();
+            $result = $mService->preLoadMerchantAcntReport();
+
+            $this->assign("merchantReportInfo", $result);
+
             $this->show();
         } else {
             $this->redirect("Index/index");
@@ -219,6 +225,60 @@ class AdminController extends Controller
 
         $mService = new MerchantAccountService();
         $result = $mService->createMerchantAccount($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : merchant_account_delete
+    // Input : N/A
+    // Output: N/A
+    // Description: delete merchant account
+    // ==========================================================
+    public function merchant_account_delete()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new MerchantAccountService();
+        $result = $mService->deleteMerchantAccount($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : merchant_account_load
+    // Input : N/A
+    // Output: N/A
+    // Description: load merchant account
+    // ==========================================================
+    public function merchant_account_load()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new MerchantAccountService();
+        $result = $mService->loadMerchantAccount($jsonMsg);
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : merchant_account_update
+    // Input : N/A
+    // Output: N/A
+    // Description: update merchant account
+    // ==========================================================
+    public function merchant_account_update()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        $mService = new MerchantAccountService();
+        $result = $mService->updateMerchantAccount($jsonMsg);
 
         $this->ajaxReturn($result);
         exit();
@@ -346,6 +406,25 @@ class AdminController extends Controller
         // get tag report
         $mService = new TagInfoService();
         $result = $mService->preLoadTagReport();
+
+        $this->ajaxReturn($result);
+        exit();
+    }
+
+    // ==========================================================
+    // Name : merchant_acnt_report_refresh_process
+    // Input : N/A
+    // Output: N/A
+    // Description: refresh to read merchant account report
+    // ==========================================================
+    public function merchant_acnt_report_refresh_process()
+    {
+        header("Content-type: application/json; charset = utf-8");
+        $jsonMsg = json_decode(file_get_contents('php://input'));
+
+        // get tag report
+        $mService = new MerchantAccountService();
+        $result = $mService->preLoadMerchantAcntReport();
 
         $this->ajaxReturn($result);
         exit();

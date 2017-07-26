@@ -234,12 +234,12 @@ class TagLoadLogic extends Logic
             $result["info"]["tag_type"] = $queryResult->getTagType();
 
             // Load the tag type definition
-            for ($count = 0; $count < sizeof(CommonDefinition::TAG_TYPE_DEF); $count ++) {
+            for ($count = 0; $count < count(CommonDefinition::TAG_TYPE_DEF); $count ++) {
                 $result["info"]["tag_type_def"][$count] = CommonDefinition::TAG_TYPE_DEF[$count];
             }
 
             // Load the tag status defition
-            for ($count = 0; $count < sizeof(CommonDefinition::TAG_STATUS_DEF); $count ++) {
+            for ($count = 0; $count < count(CommonDefinition::TAG_STATUS_DEF); $count ++) {
                 $result["info"]["tag_status_def"][$count] = CommonDefinition::TAG_STATUS_DEF[$count];
             }
         } else {

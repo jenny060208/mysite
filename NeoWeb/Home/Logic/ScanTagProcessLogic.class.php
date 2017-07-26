@@ -50,9 +50,9 @@ class ScanTagProcessLogic extends Logic
         $sysUtil = new SysUtility();
         $tagSet = $sysUtil->decodeTagId($tagSet);
 
-        if ((null == $tagSet->getTagIndex()) || (null == $tagSet->getTagType())) {
-            $tagSet->setStatus(CommonDefinition::ERROR);
-            $tagSet->setInfo("ERROR! Invalid Code scanned!");
+        if (false == $tagSet->getStatus()) {
+            $tagSet->setStatus(false);
+            $tagSet->setInfo("5678 ERROR! Invalid Code scanned!");
 
             return ($tagSet); // Connect to DB failed return without further handling
         }
@@ -61,14 +61,14 @@ class ScanTagProcessLogic extends Logic
         // Step 2: Log the scan event
         // Step 3: direct to the desired web page
 
-        $tblName = $sysUtil->getTagWebPageTblName();
+        $tblName = $sysUtil->getTagInfoTblName();
 
         $neoModel = new NeoModel(SysDefinition::USER_DB_CONFIG);
         // Connect to Database
         $db_neo_conn = $neoModel->connect();
 
         if (! $db_neo_conn) {
-            $tagSet->setStatus(CommonDefinition::ERROR);
+            $tagSet->setStatus(false);
             $tagSet->setInfo("Fail to connect to DataBase!");
 
             return ($tagSet); // Connect to DB failed return without further handling
@@ -78,19 +78,15 @@ class ScanTagProcessLogic extends Logic
         $neoModel->setTableName($tblName);
         $queryResult = $neoModel->getTagInfoById($tagSet->getTagId());
 
-        if (! is_bool($queryResult)) {
-            $queryResult->setStatus(CommonDefinition::SUCCESS);
+        if ($queryResult->getStatus()) {
             $queryResult->setTagType($tagSet->getTagType());
-
-            $neoModel->close();
-            return ($queryResult);
         } else {
-            $queryResult->setStatus(CommonDefinition::ERROR);
-            $queryResult->setInfo("ERROR! Invalid Code scanned!");
-
-            $neoModel->close();
-            return (false);
+            $queryResult->setStatus(false);
+            $queryResult->setInfo("7367 ERROR! Invalid Code scanned!");
         }
+
+        $neoModel->close();
+        return ($queryResult);
     }
 
     /**
@@ -98,10 +94,10 @@ class ScanTagProcessLogic extends Logic
      * Input : $eventData -- event data set needs to be logged
      * Output: log result
      */
-    public function scanEventLog($eventSet)
+    public function scanEventLog($setData)
     {
         $sysUtil = new SysUtility();
-        $tblName = $sysUtil->getTagScanEventTblName($bid);
+        $tblName = $sysUtil->getTagScanEventTblName($setData->getBusinessId());
 
         $neoModel = new NeoModel(SysDefinition::USER_DB_CONFIG);
         // Connect to Database
@@ -111,9 +107,11 @@ class ScanTagProcessLogic extends Logic
             return (false); // Connect to DB failed return without further handling
         }
 
+        echo ("scan log Table name = " . $tblName);
+
         // set the db table name
         $neoModel->setTableName($tblName);
-        $queryResult = $neoModel->addTagScanEvent($eventSet);
+        $queryResult = $neoModel->addTagScanEvent($setData);
 
         $neoModel->close();
         return ($queryResult); // return true or false
@@ -143,63 +141,5 @@ class ScanTagProcessLogic extends Logic
 
         $neoModel->close();
         return ($queryResult); // return true or false
-    }
-
-    /**
-     * Name : getInTouchMsgProcess
-     * Input : None
-     * Output: array -- general enquiry message process result
-     *
-     * Description: general enquiry message process result
-     */
-    public function getInTouchMsgProcess($jsonStr)
-    {
-        $result = array();
-
-        $sysUtil = new SysUtility();
-
-        if (! $sysUtil->checkStringlength($jsonStr->general_enquiry_fm_message, CommonDefinition::MAX_CONTACT_MSG_LENGTH)) {
-            $result["status"] = CommonDefinition::ERROR;
-            $result["info"] = "Error: Maximum 300 characters message!";
-            return ($result); // Connect to DB failed return without further handling
-        } else if (! $sysUtil->checkFormField($jsonStr->general_enquiry_name, CommonDefinition::REG_NAME_ID)) {
-            $result["status"] = CommonDefinition::ERROR;
-            $result["info"] = "Error: Name field wrong!";
-            return ($result); // Connect to DB failed return without further handling
-        } else if (! $sysUtil->checkFormField($jsonStr->general_enquiry_email, CommonDefinition::REG_EMAIL_ID)) {
-            $result["status"] = CommonDefinition::ERROR;
-            $result["info"] = "Error: Not a valid email address";
-            return ($result); // Connect to DB failed return without further handling
-        }
-
-        $tblName = $sysUtil->getNeoInTouchTblName();
-
-        $neoModel = new NeoModel(SysDefinition::USER_DB_CONFIG);
-        // Connect to Database
-        $db_neo_conn = $neoModel->connect();
-
-        if (! $db_neo_conn) {
-            $result["status"] = CommonDefinition::ERROR;
-            $result["info"] = "Fail to connect to DataBase!";
-            return ($result); // Connect to DB failed return without further handling
-        }
-
-        // set the db table name
-        $neoModel->setTableName($tblName);
-
-        // No previous message existed, add a new one
-        $bnSet = new BusinessInfoSet($jsonStr->general_enquiry_name, $jsonStr->general_enquiry_email, null, null);
-        $bnSet->setMsg($jsonStr->general_enquiry_fm_message);
-
-        if ($neoModel->addInTouchMsg($bnSet)) {
-            $result["status"] = CommonDefinition::SUCCESS;
-            $result["info"] = "Thanks, your message is received! Our agent will conact you soon. ";
-        } else {
-            $result["status"] = CommonDefinition::ERROR;
-            $result["info"] = "ERROR! your message cannot be processed.";
-        }
-
-        $neoModel->close();
-        return ($result);
     }
 }

@@ -244,7 +244,6 @@ class TagManageModel extends MyModel
                 $tagSet->setTagLabel($row[AllTableInfoDefinition::DB_FIELD_TAG_LABEL]);
                 $tagSet->setBusinessId($row[AllTableInfoDefinition::DB_FIELD_BUSINESS_ID]);
                 $tagSet->setTagStatus($row[AllTableInfoDefinition::DB_FIELD_STATUS]);
-                $tagSet->setWebPage($row[AllTableInfoDefinition::DB_FIELD_TAG_WEB_PAGE]);
             }
         } else {
             $tagSet->setStatus(CommonDefinition::ERROR);
@@ -300,8 +299,7 @@ class TagManageModel extends MyModel
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_NUMBER . "=" . '\'' . $tagSet->getTagNumber() . '\', ';
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_LABEL . "=" . '\'' . $tagSet->getTagLabel() . '\', ';
         $strQuery .= AllTableInfoDefinition::DB_FIELD_BUSINESS_ID . "=" . '\'' . $tagSet->getBusinessId() . '\', ';
-        $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . "=" . '\'' . $tagSet->getTagStatus() . '\', ';
-        $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_WEB_PAGE . "=" . '\'' . $tagSet->getWebPage() . '\'';
+        $strQuery .= AllTableInfoDefinition::DB_FIELD_STATUS . "=" . '\'' . $tagSet->getTagStatus() . '\'';
         $strQuery .= " WHERE ";
         $strQuery .= AllTableInfoDefinition::DB_FIELD_TAG_ID . "=" . '\'' . $tagSet->getTagId() . '\'';
 

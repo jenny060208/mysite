@@ -242,6 +242,12 @@ class CommonDefinition
         "Retail",
         "Spa"
     );
+
+    const BUSINESS_STATUS_DEF = array(
+        "Initial",
+        "Disable",
+        "Enable"
+    );
 }
 ?>
 

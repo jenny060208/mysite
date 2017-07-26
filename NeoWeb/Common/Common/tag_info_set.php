@@ -27,6 +27,16 @@ class TagInfoSet
 
     private $businessId;
 
+    private $businessName;
+
+    private $rewardMsg;
+
+    private $email;
+
+    private $facebookId;
+
+    private $twitterId;
+
     private $tagNumber;
 
     private $tagStatus;
@@ -52,6 +62,18 @@ class TagInfoSet
         $this->webPage = null;
         $this->scanTime = null;
         $this->businessId = null;
+
+        $this->businessName = null;
+
+        $this->rewardMsg = null;
+        ;
+
+        $this->email = null;
+
+        $this->facebookId = null;
+
+        $this->twitterId = null;
+
         $this->tagNumber = null;
         $this->tagLabel = null;
 
@@ -206,6 +228,61 @@ class TagInfoSet
     public function getTotalTag()
     {
         return ($this->totalTags);
+    }
+
+    // for business name
+    public function setBusinessName($businessName)
+    {
+        $this->businessName = $businessName;
+    }
+
+    public function getBusinessName()
+    {
+        return ($this->businessName);
+    }
+
+    // for reward message
+    public function setRewardMsg($rewardMsg)
+    {
+        $this->rewardMsg = $rewardMsg;
+    }
+
+    public function getRewardMsg()
+    {
+        return ($this->rewardMsg);
+    }
+
+    // for email
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    public function getEmail()
+    {
+        return ($this->email);
+    }
+
+    // for facebook ID
+    public function setFacebookId($facebookId)
+    {
+        $this->facebookId = $facebookId;
+    }
+
+    public function getFacebookId()
+    {
+        return ($this->facebookId);
+    }
+
+    // for twitter ID
+    public function setTwitterId($twitterId)
+    {
+        $this->twitterId = $twitterId;
+    }
+
+    public function getTwitterId()
+    {
+        return ($this->twitterId);
     }
 }
 

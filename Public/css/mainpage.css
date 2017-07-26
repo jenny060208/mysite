@@ -87,6 +87,19 @@
 	color: #ffffff;
 }
 
+.general_text_link_8_style {
+  text-decoration: none;
+  font-size: 20px
+  color: #333333;
+}
+
+.general_text_link_8_style:hover {
+  text-decoration: none;
+  color: #22ff33;
+}
+
+
+
 /* Top Navigation style */
 .jumbotron {
 	background-color: #f4511e;

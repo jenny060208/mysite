@@ -93,6 +93,18 @@ class AllTableInfoDefinition
     // Tag web page
     const DB_FIELD_TAG_WEB_PAGE = "tag_web_page";
 
+    // web page
+    const DB_FIELD_WEB_PAGE = "web_page";
+
+    // Tag reward message
+    const DB_FIELD_TAG_REWARD_MSG = "tag_reward_msg";
+
+    // Tag user registration success message
+    const DB_FIELD_TAG_REGIST_SUCCESS_MSG = "tag_success_msg";
+
+    // note
+    const DB_FIELD_NOTE = "note";
+
     // date/time related field
     const DB_FIELD_TIME = "date";
 
@@ -132,10 +144,37 @@ class AllTableInfoDefinition
 
     const DB_FIELD_DEVICE_TYPE = "device_type";
 
+    const DB_FIELD_FACE_BOOK_ID = "facebook_id";
+
+    const DB_FIELD_TWITTER_ID = "twitter_id";
+
     // Device type such as mobile or PC, etc
     const DB_FIELD_BROWSER_TYPE = "browser_type";
 
     // Browser type, such as Chrome, firefox, etc
+    const FIRST_NAME_LENGTH = 50;
+
+    const LAST_NAME_LENGTH = 50;
+
+    const BUSINESS_NAME_LENGTH = 100;
+
+    const PASS_WORD_LENGTH = 32;
+
+    const FACE_BOOK_ID_LENGTH = 150;
+
+    const TWITTER_ID_LENGTH = 150;
+
+    const REWARD_MSG_LENGTH = 1000;
+
+    const SUCCESS_MSG_LENGTH = 1000;
+
+    const NOTE_LENGTH = 2000;
+
+    const WEB_PAGE_LENGTH = 100;
+
+    const ADDRESS_LENGTH = 100;
+
+    const CITY_LENGTH = 50;
 
     // -----------------------------------------------------------------------
     // -----------------------------------------------------------------------

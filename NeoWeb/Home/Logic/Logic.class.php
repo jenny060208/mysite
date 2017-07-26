@@ -10,9 +10,8 @@
 namespace Home\Logic;
 
 use Think\MyModel;
-
-define ( 'HOME_LOGIC_PATH', dirname ( dirname ( __FILE__ ) ) );
-define ( 'NEO_WEB_HOME_LOGIC_PATH', dirname ( dirname ( dirname ( __FILE__ ) ) ) );
+define('HOME_LOGIC_PATH', dirname(dirname(__FILE__)));
+define('NEO_WEB_HOME_LOGIC_PATH', dirname(dirname(dirname(__FILE__))));
 
 // Load config file
 require_once (HOME_LOGIC_PATH . '/Conf/config.php');
@@ -37,11 +36,13 @@ require_once (NEO_WEB_HOME_LOGIC_PATH . '/Common/Common/order_1_info_set.php');
 require_once (NEO_WEB_HOME_LOGIC_PATH . '/Common/Common/tag_info_set.php');
 
 require_once (NEO_WEB_HOME_LOGIC_PATH . '/Common/Common/all_table_info_definition.php');
-abstract class Logic {
-	
-	/**
-	 * Constructures
-	 */
-	public function __construct() {
-	}
+
+abstract class Logic
+{
+
+    /**
+     * Constructures
+     */
+    public function __construct()
+    {}
 }

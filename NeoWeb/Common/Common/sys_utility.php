@@ -436,6 +436,20 @@ class SysUtility
     }
 
     // =====================================================
+    // Name: getMerchantAccountInfoTblName
+    // Return: merchant account info table name
+    //
+    // Parameter: telphone area code
+    // Description: get merchant account table name
+    // =====================================================
+    public function getMerchantAccountInfoTblName($telAreaCode)
+    {
+        $tblName = $telAreaCode . AllTableInfoDefinition::BN_TABLE_NAME_DASHBOARD_2_POSTFIX;
+
+        return ($tblName);
+    }
+
+    // =====================================================
     // Name: getNeoProductInfoTblName
     // Return: Neo product info table name
     //
@@ -613,8 +627,10 @@ class SysUtility
     // =====================================================
     public function decodeTagId($tagSet)
     {
-        $setTemp = new TagInfoSet(null);
+        $setTemp = new TagInfoSet($tagSet->getTagId());
 
+        // Preset to false state
+        $setTemp->setStatus(false);
         $tagIdTemp = $tagSet->getTagId();
 
         // Validate the tag ID length
@@ -622,8 +638,8 @@ class SysUtility
             return ($setTemp);
         }
 
-        $indexTemp = substr($tagIdTemp, 0, 5);
-        $typeTemp = substr($tagIdTemp, 5, 1);
+        $indexTemp = substr($tagIdTemp, 0, 6);
+        $typeTemp = substr($tagIdTemp, 6, 1);
         $typeTemp = (int) $typeTemp; // convert to INT
 
         // validate the tag type
@@ -637,6 +653,7 @@ class SysUtility
         $strTemp = md5($indexTemp);
         $strTemp = $strTemp . "Neo";
         $strTemp = md5($strTemp);
+
         $strTemp = substr($strTemp, 2, 3); // three characters from third one to fifth
 
         // Code validation failed
@@ -647,6 +664,7 @@ class SysUtility
         // pass the tag index and type
         $setTemp->setTagIndex($indexTemp);
         $setTemp->setTagType($typeTemp);
+        $setTemp->setStatus(true);
 
         return ($setTemp);
     }
@@ -928,8 +946,42 @@ class SysUtility
     // =====================================================
     public function getBusinessTypeIndex($businessType)
     {
-        for ($index = 0; $index < sizeof(CommonDefinition::BUSINESS_TYPE); $index ++) {
+        for ($index = 0; $index < count(CommonDefinition::BUSINESS_TYPE); $index ++) {
             if (CommonDefinition::SUCCESS == strcmp($businessType, CommonDefinition::BUSINESS_TYPE[$index])) {
+                return ($index);
+            }
+        }
+
+        return (CommonDefinition::ERROR);
+    }
+
+    // =====================================================
+    // Name : getBusinessStatusType
+    // Input : $typeIndex -- business status Index
+    //
+    // Output: business status name
+    //
+    // Description: get business status name by index
+    // =====================================================
+    public function getBusinessStatusType($statusIndex)
+    {
+        return (CommonDefinition::BUSINESS_STATUS_DEF[$statusIndex - 1]);
+    }
+
+    // =====================================================
+    // Name : getBusinessStatusIndex
+    // Input : $businessStatusName-- business status name
+    //
+    // Output: business status index
+    // ERROR -- if business status name does not match in array
+    //
+    //
+    // Description: get business status index according to name
+    // =====================================================
+    public function getBusinessStatusIndex($businessStatusName)
+    {
+        for ($index = 0; $index < count(CommonDefinition::BUSINESS_STATUS_DEF); $index ++) {
+            if (CommonDefinition::SUCCESS == strcmp($businessStatusName, CommonDefinition::BUSINESS_STATUS_DEF[$index])) {
                 return ($index);
             }
         }
@@ -986,7 +1038,7 @@ class SysUtility
     // =====================================================
     public function getTagStatusIndex($tagStatus)
     {
-        for ($count = 0; $count < sizeof(CommonDefinition::TAG_STATUS_DEF); $count ++) {
+        for ($count = 0; $count < count(CommonDefinition::TAG_STATUS_DEF); $count ++) {
             if (CommonDefinition::SUCCESS == strcasecmp(CommonDefinition::TAG_STATUS_DEF[$count], $tagStatus)) {
                 return ($count + 1);
             }
@@ -1008,7 +1060,7 @@ class SysUtility
     // =====================================================
     public function getTagTypeIndex($tagType)
     {
-        for ($count = 0; $count < sizeof(CommonDefinition::TAG_TYPE_DEF); $count ++) {
+        for ($count = 0; $count < count(CommonDefinition::TAG_TYPE_DEF); $count ++) {
             if (CommonDefinition::SUCCESS == strcasecmp(CommonDefinition::TAG_TYPE_DEF[$count], $tagType)) {
                 return ($count + 1);
             }
@@ -1017,6 +1069,153 @@ class SysUtility
         // Force to QR CODE
         return (1);
     }
-}
 
+    // =====================================================
+    // Name : validateBusinessInfoSet
+    // Input : $businessSet--business info set
+    //
+    // Output: validate result
+    //
+    // Description: validate business info set
+    // =====================================================
+    public function validateBusinessInfoSet($businessSet)
+    {
+        $result = array();
+        $result["status"] = CommonDefinition::SUCCESS;
+
+        // Validate all fields possible
+
+        if (! $this->checkFormField($businessSet->getFirstName(), CommonDefinition::REG_NAME_ID)) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, First Name field is wrong!";
+        } else if (! $this->checkFormField($businessSet->getLastName(), CommonDefinition::REG_NAME_ID)) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Last Name field is wrong!";
+        } else if (! $this->checkFormField($businessSet->getBusinessName(), CommonDefinition::REG_NAME_ID)) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Business Name field is wrong!";
+        } else if (! $this->checkFormField($businessSet->getEmail(), CommonDefinition::REG_EMAIL_ID)) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Invalid email!";
+        } else if (! $this->checkFormField($businessSet->getPhone(), CommonDefinition::REG_MOBILE_ID)) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Invalid phone number!";
+        } else if (! $this->checkFormField($businessSet->getMobile(), CommonDefinition::REG_MOBILE_ID)) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Invalid Mobile number!";
+        } else if (! empty($businessSet->getPostalCode())) {
+            if (! $this->checkFormField($businessSet->getPostalCode(), CommonDefinition::REG_POSTAL_CODE_ID)) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Invalid postal code!";
+            }
+        } else if (! empty($businessSet->getFaceBookId())) {
+            if (strlen($businessSet->getFaceBookId()) > AllTableInfoDefinition::FACE_BOOK_ID_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Face book id field length beyond " . AllTableInfoDefinition::FACE_BOOK_ID_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getTwitterId())) {
+            if (strlen($businessSet->getTwitterId()) > AllTableInfoDefinition::TWITTER_ID_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Twitter id field length beyond " . AllTableInfoDefinition::TWITTER_ID_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getRewardMsg())) {
+            if (strlen($businessSet->getRewardMsg()) > AllTableInfoDefinition::REWARD_MSG_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Reward message field length beyond " . AllTableInfoDefinition::REWARD_MSG_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getSuccessMsg())) {
+            if (strlen($businessSet->getSuccessMsg()) > AllTableInfoDefinition::SUCCESS_MSG_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Success message field length beyond " . AllTableInfoDefinition::SUCCESS_MSG_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getNote())) {
+            if (strlen($businessSet->getNote()) > AllTableInfoDefinition::NOTE_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Note message field length beyond " . AllTableInfoDefinition::NOTE_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getWebPage())) {
+            if (strlen($businessSet->getWebPage()) > AllTableInfoDefinition::WEB_PAGE_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Web page message field length beyond " . AllTableInfoDefinition::WEB_PAGE_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getAddress())) {
+            if (strlen($businessSet->getAddress()) > AllTableInfoDefinition::ADDRESS_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, Address field length beyond " . AllTableInfoDefinition::ADDRESS_LENGTH . " characteres!";
+            }
+        } else if (! empty($businessSet->getCity())) {
+            if (strlen($businessSet->getCity()) > AllTableInfoDefinition::CITY_LENGTH) {
+                $result["status"] = CommonDefinition::ERROR;
+                $result["info"] = "Error, City field length beyond " . AllTableInfoDefinition::CITY_LENGTH . " characteres!";
+            }
+        } else if (strlen($businessSet->getFirstName()) > AllTableInfoDefinition::FIRST_NAME_LENGTH) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, First Name field length beyond " . AllTableInfoDefinition::FIRST_NAME_LENGTH . " characteres!";
+        } else if (strlen($businessSet->getLastName()) > AllTableInfoDefinition::LAST_NAME_LENGTH) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Last Name field length beyond " . AllTableInfoDefinition::LAST_NAME_LENGTH . " characteres!";
+        } else if (strlen($businessSet->getBusinessName()) > AllTableInfoDefinition::PASS_WORD_LENGTH) {
+            $result["status"] = CommonDefinition::ERROR;
+            $result["info"] = "Error, Business Name field length beyond " . AllTableInfoDefinition::BUSINESS_NAME_LENGTH . " characteres!";
+        }
+
+        return ($result);
+    }
+
+    // =====================================================
+    // Name : validateBusinessInfoSet
+    // Input : $bnSet1 -- business info set
+    // $bnSet2 -- business info set
+    //
+    // Output: SUCCESS -- two business info sets are the same
+    // ERROR -- not the same
+    // Description: validate business info set
+    // =====================================================
+    public function compareBusinessInfoSet($bnSet1, $bnSet2)
+    {
+        $retVal = CommonDefinition::ERROR;
+
+        if (CommonDefinition::SUCCESS != strcmp($bnSet1->getBusinessId(), $bnSet2->getBusinessId())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getFirstName(), $bnSet2->getFirstName())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getLastName(), $bnSet2->getLastName())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getBusinessName(), $bnSet2->getBusinessName())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getBusinessStatus(), $bnSet2->getBusinessStatus())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getWebPage(), $bnSet2->getWebPage())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getEmail(), $bnSet2->getEmail())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getPhone(), $bnSet2->getPhone())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getMobile(), $bnSet2->getMobile())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getAddress(), $bnSet2->getAddress())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getCity(), $bnSet2->getCity())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getProvince(), $bnSet2->getProvince())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getCountry(), $bnSet2->getCountry())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getPostalCode(), $bnSet2->getPostalCode())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getFaceBookId(), $bnSet2->getFaceBookId())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getTwitterId(), $bnSet2->getTwitterId())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getRewardMsg(), $bnSet2->getRewardMsg())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getSuccessMsg(), $bnSet2->getSuccessMsg())) {
+            return ($retVal);
+        } else if (CommonDefinition::SUCCESS != strcmp($bnSet1->getNote(), $bnSet2->getNote())) {
+            return ($retVal);
+        } else {
+            return (CommonDefinition::SUCCESS);
+        }
+    }
+}
 ?>

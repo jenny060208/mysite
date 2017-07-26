@@ -49,7 +49,7 @@ function usernameCheck(user_name)
  */  
 function businessNameCheck(business_name)
 {  
-   var pattern = /^([a-zA-Z ])/;  
+   var pattern = /^([a-zA-Z0-9 ])/;  
 
    if(business_name == "")
    {
@@ -2514,6 +2514,18 @@ function adminAccountCreateProcess(objArray)
   }
 }
 
+function merchantAccountCreatePresetProcess(objArray)
+{
+  $(objArray["first_name"]).val(null);
+  $(objArray["last_name"]).val(null);
+  $(objArray["merchant_name"]).val(null);
+  $(objArray["email"]).val(null);
+  $(objArray["phone"]).val(null);
+  $(objArray["mobile"]).val(null);
+  return;
+}
+
+
 function merchantAccountCreateProcess(objArray)
 {
   
@@ -2560,7 +2572,7 @@ function merchantAccountCreateProcess(objArray)
   }
   
   // Verify merchant name
-  if(!usernameCheck(mNameValue))
+  if(!businessNameCheck(mNameValue))
   {
     // change the error cell background color to red
     changeBgColor(objArray["merchant_name"], false);
@@ -3066,3 +3078,519 @@ function tagReportRefreshProcess(objArray)
   }
   
 }
+
+/** 
+ * Name: adtUserRegisterProcess
+ * Description: tag user register form process
+ * objArray -- object array
+ * 
+ * Return None
+ */
+function adtUserRegisterProcess(objArray)
+{
+  //Verify the input form item first
+  // 1 -- verify first name
+  // 2 -- verify last name
+  // 3 -- verify email
+  // 4 -- verify mobile name
+  // 5 -- verify check box
+  
+  var elementVerify = true;
+  var fNameValue   = $(objArray["firstName"]).val();
+  var lNameValue   = $(objArray["lastName"]).val();
+  var emailValue  = $(objArray["email"]).val();
+  var mobileValue = $(objArray["mobile"]).val();
+  var chkBoxValue = $(objArray["chkBox"]).is(':checked');
+
+  var fNameError = objArray["firstNameError"];
+  var lNameError = objArray["lastNameError"] ;
+  var emailError = objArray["emailError"];
+  var mobileError = objArray["mobileError"];
+  var chkError = objArray["chkBoxError"];
+  
+  // clear the error indication first
+  fNameError.style.display = "none";
+  lNameError.style.display = "none";
+  emailError.style.display = "none";
+  mobileError.style.display = "none";
+  chkError.style.display = "none";
+  
+  
+  // Verify first name
+  if(!usernameCheck(fNameValue))
+  {
+    // change the error cell background color to red
+  //  changeBgColor(objArray["firstName"], false);
+    objArray["firstName"].focus();
+    fNameError.style.display = "block";
+    fNameError.innerHTML = "Invalid First Name";
+    elementVerify = false;
+  }
+  
+         
+  // Verify last name
+  if(!usernameCheck(lNameValue))
+  {
+    // change the error cell background color to red
+  //  changeBgColor(objArray["lastName"], false);
+    objArray["lastName"].focus();
+    lNameError.style.display = "block";
+    lNameError.innerHTML = "Invalid Last Name";
+    elementVerify = false;
+  }
+
+  // Verify email
+  if(!emailCheck(emailValue))
+  {
+    // change the error cell background color to red
+  //  changeBgColor(objArray["email"], false);
+    objArray["email"].focus();
+    emailError.style.display = "block";
+    emailError.innerHTML = "Invalid email";
+    elementVerify = false;
+  }
+
+  // Verify the mobile
+  if(!mobileNumberCheck(mobileValue))
+  {
+    // change the error cell background color to red
+  //  changeBgColor(objArray["mobile"], false);
+    objArray["mobile"].focus();
+    mobileError.style.display = "block";
+    mobileError.innerHTML = "Invalid Mobile phone number";
+    elementVerify = false;
+  }
+
+  //
+  if(!elementVerify)
+  {
+    return;
+  }
+
+  // Verify the check box
+  if(false == chkBoxValue)
+  {
+    //  alert("Please check the consent box!");
+    chkError.style.display = "block";
+    chkError.innerHTML = "Please check the consent box!";
+    return;
+  }
+
+  var userRegisterObj = new Object();
+  userRegisterObj.first_name =  fNameValue;
+  userRegisterObj.last_name =  lNameValue;
+  userRegisterObj.email =  emailValue;
+  userRegisterObj.mobile = mobileValue;
+  
+  var userRegisterInfoJson =  JSON.stringify(userRegisterObj);
+  console.log(userRegisterInfoJson);
+
+  var actionStr = objArray["action"];
+
+  // send form data in Json string to server 
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(userRegisterInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+      //get the json data
+      var respData = $.parseJSON(data);
+      if(respData.status == 0)
+      {
+        // Response success
+        fNameError.style.display = "none";
+        lNameError.style.display = "none";
+        emailError.style.display = "none";
+        mobileError.style.display = "none";
+        chkError.style.display = "none";
+        //jump to new dashboard page
+        location.href = respData.url;
+      }
+      else if (respData.status == 500)
+      {
+        // check field error 
+      //  alert(respData.info);
+        if(respData.info.indexOf("email") >= 0)
+        {
+          emailError.style.display = "block";
+          emailError.innerHTML = respData.info;
+        }
+        
+        if(respData.info.indexOf("mobile") >= 0)
+        {
+          mobileError.style.display = "block";
+          mobileError.innerHTML = respData.info;
+        }
+      }
+      else
+      {
+        alert(respData.info);
+      }
+    }
+  }
+
+}
+
+/** 
+ * Name: merchantAccountInfoLoadInAdmin
+ * Description: preload merchant account info
+ * objArray -- object array
+ * currentMerchant -- current merchant
+ * 
+ * Return None
+ */
+function merchantAccountInfoLoadInAdmin(objArray, currentMerchant)
+{
+  var totalMerchant;
+  var merchantInfoObj = new Object();
+  merchantInfoObj.current_merchant =  currentMerchant;
+
+  var merchantInfoJson =  JSON.stringify(merchantInfoObj);
+  console.log(merchantInfoJson);
+  
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(merchantInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if((respData.status == 0) && (respData.info.total_merchant != 0))
+      {
+        $(objArray["mid"]).val(respData.info.merchant_id);
+        $(objArray["first_name"]).val(respData.info.first_name);
+        $(objArray["last_name"]).val(respData.info.last_name);
+        $(objArray["merchant_name"]).val(respData.info.merchant_name);
+        $(objArray["web_page"]).val(respData.info.web_page);
+        $(objArray["email"]).val(respData.info.email);
+        $(objArray["phone"]).val(respData.info.phone);
+        $(objArray["mobile"]).val(respData.info.mobile);
+        
+        
+        $(objArray["address"]).val(respData.info.address);
+        $(objArray["city"]).val(respData.info.city);
+        $(objArray["postal_code"]).val(respData.info.postal_code);
+        
+        $(objArray["fb_id"]).val(respData.info.fb_id);
+        $(objArray["twitter_id"]).val(respData.info.twitter_id);
+        $(objArray["reward_msg"]).val(respData.info.reward_msg);
+        $(objArray["success_msg"]).val(respData.info.success_msg);
+        $(objArray["note"]).val(respData.info.note);
+        
+        objArray["currentMerchant"].innerHTML = respData.info.current_merchant;
+        objArray["totalMerchant"].innerHTML = respData.info.total_merchant;
+
+        // Load merchant status options
+        addSelectOptions3(objArray["merchant_status"], respData.info.merchant_status_def, respData.info.merchant_status);
+        // Load province/state
+        addSelectOptions3(objArray["province"], respData.info.province_def, respData.info.province);
+        //Load country
+        addSelectOptions3(objArray["country"], respData.info.country_def, respData.info.country);
+
+      }
+      else
+      {
+        $(objArray["first_name"]).val(null);
+        $(objArray["last_name"]).val(null);
+        $(objArray["merchant_name"]).val(null);
+        $(objArray["web_page"]).val(null);
+        $(objArray["email"]).val(null);
+        $(objArray["phone"]).val(null);
+         
+        $(objArray["mobile"]).val(null);
+        $(objArray["address"]).val(null);
+        $(objArray["city"]).val(null);
+        $(objArray["postal_code"]).val(null);
+
+        $(objArray["fb_id"]).val(null);
+        $(objArray["twitter_id"]).val(null);
+        $(objArray["reward_msg"]).val(null);
+        $(objArray["success_msg"]).val(null);
+        $(objArray["note"]).val(null);
+    
+        objArray["currentMerchant"].innerHTML = 0;
+        objArray["totalMerchant"].innerHTML = 0;
+
+        // Load merchant status options
+        addSelectOptions3(objArray["merchant_status"], 0, 0);
+        addSelectOptions3(objArray["province"], 0, 0);
+        addSelectOptions3(objArray["country"], 0, 0);
+        
+        
+      }
+    }
+  }  
+  
+}
+
+/** 
+ * Name: merchantAccountInfoPreviousLoadInAdmin
+ * Description: load previous merchant account info
+ * objArray -- object array
+ * 
+ * 
+ * Return None
+ */
+function merchantAccountInfoPreviousLoadInAdmin(objArray)
+{
+  var currentMerchant;
+
+  currentMerchant =  Number(objArray["currentMerchant"].innerHTML);
+
+  if(currentMerchant > 1)
+  {
+    currentMerchant = currentMerchant -1;
+  }
+
+  merchantAccountInfoLoadInAdmin(objArray, currentMerchant);
+}
+
+
+/** 
+ * Name: merchantAccountInfoNextLoadInAdmin
+ * Description: load next merchant account info
+ * objArray -- object array
+ * 
+ * 
+ * Return None
+ */
+function merchantAccountInfoNextLoadInAdmin(objArray)
+{
+  var currentMerchant;
+
+  currentMerchant =  Number(objArray["currentMerchant"].innerHTML);
+
+  currentMerchant = currentMerchant + 1;
+
+  merchantAccountInfoLoadInAdmin(objArray, currentMerchant);
+}
+
+/** 
+ * Name: merchantAcntDeleteProcessInAdmin
+ * Description: delete the merchant account
+ * objArray -- object array
+ * 
+ * 
+ * Return None
+ */
+function merchantAcntDeleteProcessInAdmin(objArray)
+{
+  // Check the total account first, if zero then return directly
+  var totalAcnt = Number(objArray["totalMerchant"].innerHTML);
+  if(totalAcnt == 0)
+  {
+    return;
+  }
+
+  var merchantInfoObj = new Object();
+  merchantInfoObj.current_merchant =  objArray["currentMerchant"].innerHTML;
+  merchantInfoObj.merchant_id = $(objArray["mid"]).val();
+  
+  var merchantInfoJson =  JSON.stringify(merchantInfoObj);
+  console.log(merchantInfoJson);
+  
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(merchantInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      if((respData.status == 0) && (respData.info.total_merchant != 0))
+      {
+        $(objArray["mid"]).val(respData.info.merchant_id);
+        $(objArray["first_name"]).val(respData.info.first_name);
+        $(objArray["last_name"]).val(respData.info.last_name);
+        $(objArray["merchant_name"]).val(respData.info.merchant_name);
+        $(objArray["web_page"]).val(respData.info.web_page);
+        $(objArray["email"]).val(respData.info.email);
+        $(objArray["phone"]).val(respData.info.phone);
+        $(objArray["mobile"]).val(respData.info.mobile);
+        $(objArray["address"]).val(respData.info.address);
+        $(objArray["city"]).val(respData.info.city);
+        $(objArray["postal_code"]).val(respData.info.postal_code);
+        $(objArray["fb_id"]).val(respData.info.fb_id);
+        $(objArray["twitter_id"]).val(respData.info.twitter_id);
+        $(objArray["reward_msg"]).val(respData.info.reward_msg);
+        $(objArray["success_msg"]).val(respData.info.success_msg);
+        $(objArray["note"]).val(respData.info.note);
+    
+        objArray["currentMerchant"].innerHTML = respData.info.current_merchant;
+        objArray["totalMerchant"].innerHTML = respData.info.total_merchant;
+
+        // Load merchant status options
+        addSelectOptions3(objArray["merchant_status"], respData.info.merchant_status_def, respData.info.merchant_status);
+        // Load province/state
+        addSelectOptions3(objArray["province"], respData.info.province_def, respData.info.province);
+        //Load country
+        addSelectOptions3(objArray["country"], respData.info.country_def, respData.info.country);
+
+      }
+      else
+      {
+        $(objArray["mid"]).val(null);
+        $(objArray["first_name"]).val(null);
+        $(objArray["last_name"]).val(null);
+        $(objArray["merchant_name"]).val(null);
+        $(objArray["web_page"]).val(null);
+        $(objArray["email"]).val(null);
+        $(objArray["phone"]).val(null);
+       
+        $(objArray["mobile"]).val(null);
+        $(objArray["address"]).val(null);
+        $(objArray["city"]).val(null);
+        $(objArray["postal_code"]).val(null);
+
+        $(objArray["fb_id"]).val(null);
+        $(objArray["twitter_id"]).val(null);
+        $(objArray["reward_msg"]).val(null);
+        $(objArray["success_msg"]).val(null);
+        $(objArray["note"]).val(null);
+      
+        objArray["currentMerchant"].innerHTML = 0;
+        objArray["totalMerchant"].innerHTML = 0;
+
+        // Load merchant status options
+        addSelectOptions3(objArray["merchant_status"], 0, 0);
+        addSelectOptions3(objArray["province"], 0, 0);
+        addSelectOptions3(objArray["country"], 0, 0);
+      }
+    }
+  }
+}
+
+
+/** 
+ * Name: merchantAcntUpdateProcessInAdmin
+ * Description: update the merchant account
+ * objArray -- object array
+ * 
+ * 
+ * Return None
+ */
+function merchantAcntUpdateProcessInAdmin(objArray)
+{
+  // Check the total account first, if zero then return directly
+  var totalAcnt = Number(objArray["totalMerchant"].innerHTML);
+  if(totalAcnt == 0)
+  {
+    return;
+  }
+  // Validate the input field
+  var merchantInfoObj = new Object();
+  merchantInfoObj.current_merchant =  objArray["currentMerchant"].innerHTML;
+  merchantInfoObj.total_merchant = objArray["totalMerchant"].innerHTML;
+  
+  merchantInfoObj.merchant_id =  $(objArray["mid"]).val();
+  merchantInfoObj.first_name =  $(objArray["first_name"]).val();
+  merchantInfoObj.last_name =$(objArray["last_name"]).val();
+  merchantInfoObj.merchant_name =  $(objArray["merchant_name"]).val();
+  merchantInfoObj.merchant_status =  $(objArray["merchant_status"]).val();
+  merchantInfoObj.web_page =  $(objArray["web_page"]).val();
+  
+  merchantInfoObj.email =$(objArray["email"]).val();
+  merchantInfoObj.phone =  $(objArray["phone"]).val();
+  merchantInfoObj.mobile =  $(objArray["mobile"]).val();
+  
+  merchantInfoObj.address =$(objArray["address"]).val();
+  merchantInfoObj.city =  $(objArray["city"]).val();
+  merchantInfoObj.province =  $(objArray["province"]).val();
+  merchantInfoObj.country =  $(objArray["country"]).val();
+  merchantInfoObj.postal_code =  $(objArray["postal_code"]).val();
+  merchantInfoObj.fb_id =$(objArray["fb_id"]).val();
+  merchantInfoObj.twitter_id =$(objArray["twitter_id"]).val();
+ 
+  merchantInfoObj.reward_msg =$(objArray["reward_msg"]).val();
+  merchantInfoObj.success_msg =$(objArray["success_msg"]).val();
+  merchantInfoObj.note =$(objArray["note"]).val();
+ 
+  var merchantInfoJson =  JSON.stringify(merchantInfoObj);
+  console.log(merchantInfoJson);
+  
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send(merchantInfoJson);
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+     
+      alert(respData.info);
+     
+    }
+  }
+}
+
+/** 
+ * Name: merchantAcntReportRefreshProcessInAdmin
+ * Description: merchant account report refresh
+ * objArray -- object array
+ * 
+ * Return None
+ */
+function merchantAcntReportRefreshProcessInAdmin(objArray)
+{
+  var actionStr = objArray["action"];
+  
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("post", actionStr, true);
+  xmlhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  xmlhttp.send();
+    
+  xmlhttp.onreadystatechange = function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var data = xmlhttp.responseText;
+      console.log(data);
+             
+      //get the json data
+      var respData = $.parseJSON(data);
+      
+      objArray["mAcntTotal"].innerHTML = respData.acnt_report_total
+      objArray["mAcntInitial"].innerHTML = respData.acnt_report_initial
+      objArray["mAcntEnable"].innerHTML = respData.acnt_report_enable
+      objArray["mAcntDisable"].innerHTML = respData.acnt_report_disable
+    }
+  }
+
+}
+
+
+
+
